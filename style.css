@@ -1,0 +1,281 @@
+body{
+  font-family: 'Cairo', sans-serif;
+}
+button{
+  font-family: 'Cairo', sans-serif;
+}
+/*التحكم في الصفحة كاملا*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+#div1 {
+  width: 100%;
+  height: 40px;
+  background: #5DF8D8;
+  display: flex;
+  align-items: center;
+}
+
+/*زر القائمة*/
+#btn1 {
+  width: 30px;
+  height: 40px;
+  color: Black;
+  font-size: 18px;
+  background: none;
+  border: none;
+  transition: 0.5s;
+}
+
+#btn1:hover {
+  color: red;
+}
+
+/*نص المطور*/
+#pmd {
+  margin-left: 10px;
+  font-size: 20px;
+  color: Black;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+/*نص تسجيل الدخول*/
+#login{
+  margin-left: 80px;
+  font-size: 20px;
+}
+
+/*القائمة*/
+#div2 {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  right: -60%;
+  background: #1E293B;
+  transition: 1s;
+}
+
+#div3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*زر الرجوع*/
+#btn2 {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: rgb(0,0,220);
+  color: red;
+  font-size: 18px;
+}
+
+#btn2:hover {
+  background: rgb(0,0,180);
+  color: red;
+}
+
+/*الأزرار داخل القائمة*/
+.btn3 {
+  margin-top: 10px;
+  width: 95%;
+  height: 40px;
+  border: none;
+  background: #0F172A;
+  color: white;
+  font-size: 19px;
+  border-radius: 20px;
+}
+
+/*تواصل معنا*/
+      #contact_us{
+        margin-top: 50px;
+        width: 94%;
+        height: 240px;
+        background: #300766;
+        border-radius: 20px;
+        display: none;
+        transition: 1s;
+      }
+      #contact_us:hover{
+        box-shadow: 0px 0px 30px 4px #300766;
+      }
+      #contact_us button{
+        width: 80%;
+        height: 40px;
+        margin-top: 30px;
+        border-radius: 20px;
+        background:#0a4c63;
+        color: red;
+        font-size: 16px;
+        border: none;
+        transition: 0.5s;
+      }
+      #contact_us button:hover{
+        box-shadow: 0px 0px 30px 3px #0a4c63;
+      }
+
+
+.btn3:hover {
+  background: rgb(0, 0, 180);
+  color: red;
+}
+
+/*الصورة العلوية*/
+#img1 {
+  width: 100%;
+}
+
+/*الوصف*/
+#div4 {
+  text-align: center;
+}
+
+/*التحكم بالنص الذي فوق الصندوق*/
+legend {
+  width: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
+  background: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+/*تصميم وتطوير مواقع الويب*/
+#a1 {
+  margin-top: 10px;
+  margin-left: 2%;
+  width: 95%;
+  height: 90px;
+  border: 3px dotted red;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#a1:hover {
+  box-shadow: 0 0 40px 2px red;
+}
+
+#p1 {
+  margin-top: 10px;
+  font-size: 15px;
+  color: red;
+}
+
+/*واجهات ويب عصرية*/
+#a2 {
+  margin-top: 20px;
+  margin-left: 2%;
+  width: 95%;
+  height: 120px;
+  border: 3px dotted purple;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#a2:hover {
+  box-shadow: 0 0 40px 2px purple;
+}
+
+#p2 {
+  margin-top: 10px;
+  font-size: 15px;
+  color: purple;
+}
+
+/*تطوير مواقع احترافية*/
+#a3 {
+  margin-top: 20px;
+  margin-left: 2%;
+  width: 95%;
+  height: 100px;
+  border: 3px dotted green;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#a3:hover {
+  box-shadow: 0 0 40px 2px green;
+}
+
+#p3 {
+  margin-top: 10px;
+  font-size: 15px;
+  color: green;
+}
+
+/*تصاميم حديثة وانيقة*/
+#a4 {
+  margin-top: 20px;
+  margin-left: 2%;
+  width: 95%;
+  height: 120px;
+  border: 3px dotted orange;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#a4:hover {
+  box-shadow: 0 0 40px 2px orange;
+}
+
+#p4 {
+  margin-top: 10px;
+  font-size: 15px;
+  color: orange;
+}
+
+/*أيقونات المتابعة*/
+#div5{
+  margin-top: 160px;
+  text-align: center;
+}
+
+/*فيسبوك*/
+.f{
+  margin: 10px;
+  font-size: 28px;
+  color: black;
+}
+
+.f:hover{
+  color: blue;
+}
+
+/*يوتيوب*/
+.y{
+  margin: 10px;
+  font-size: 28px;
+  color: black;
+}
+
+.y:hover{
+  color: red;
+}
+
+/*انستقرام*/
+.i{
+  margin: 10px;
+  font-size: 28px;
+  color: black;
+}
+
+.i:hover{
+  color: #E1306C;
+}
+
+#p5{
+  margin-top: 10px;
+  font-size: 11px;
+  color: gray;
+}
