@@ -45,7 +45,6 @@ a{
   text-decoration: none;
   color: red;
 }
-
 /*القائمة*/
 #div2 {
   position: fixed;
@@ -230,9 +229,30 @@ legend {
   color: orange;
 }
 
+/*مطور مواقع ويب احترافي , ابدأ مشروعك الإلكتروني الآن*/
+#a5 {
+  margin-top: 20px;
+  margin-left: 2%;
+  width: 95%;
+  height: 630px;
+  border: 3px dotted rgb(97,189,227);
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#a5:hover {
+  box-shadow: 0 0 40px 2px rgb(97,189,227);
+}
+
+#p5{
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgb(97,189,227);
+}
+
 /*أيقونات المتابعة*/
 #div5{
-  margin-top: 160px;
+  margin-top: 120px;
   text-align: center;
 }
 
@@ -269,7 +289,7 @@ legend {
   color: #E1306C;
 }
 
-#p5{
+#p6{
   margin-top: 10px;
   font-size: 11px;
   color: gray;
