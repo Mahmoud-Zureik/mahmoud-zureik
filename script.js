@@ -12,7 +12,7 @@ function hide() {
 
 //اظهار واخفاء تواصل معنا
 function contact_us() {
-  var g = document.getElementById("contact_us");
+  var g = document.getElementById("div4");
 
   if (g.style.display == "block") {
     g.style.display = "none";

@@ -6,22 +6,25 @@ button{
   font-family: 'Cairo', sans-serif;
 }
 /*التحكم في الصفحة كاملا*/
-* {
+*{
   margin: 0;
   padding: 0;
 }
 
 
-#div1 {
+#div1{
+  direction: rtl;
+  position: fixed;
+  z-index: 999;
   width: 100%;
   height: 40px;
-  background: #5DF8D8;
+  background: rgb(69,249,249);
   display: flex;
   align-items: center;
 }
 
-/*زر القائمة*/
-#btn1 {
+/*زر القائمة الجانبية*/
+#btn1{
   width: 30px;
   height: 40px;
   color: Black;
@@ -29,15 +32,17 @@ button{
   background: none;
   border: none;
   transition: 0.5s;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
-#btn1:hover {
+#btn1:hover{
   color: red;
 }
 
 /*نص المطور*/
-#pmd {
-  margin-left: 10px;
+#pmd{
+  margin-right: 46%;
   font-size: 20px;
   color: Black;
 }
@@ -46,8 +51,8 @@ a{
   text-decoration: none;
   color: red;
 }
-/*القائمة*/
-#div2 {
+/*القائمة الجانبية*/
+#div2{
   position: fixed;
   z-index: 999;
   width: 50%;
@@ -58,235 +63,103 @@ a{
   transition: 1s;
 }
 
-#div3 {
+#div3{
   margin-top: 10px;
   text-align: center;
 }
 
 /*زر الرجوع*/
-#btn2 {
+#btn2{
   width: 100%;
   height: 40px;
   border: none;
-  background: rgb(0,0,220);
-  color: red;
+  background: #00c400;
+  color: rgb(236,236,236);
   font-size: 18px;
+  cursor: pointer;
 }
 
-#btn2:hover {
-  background: rgb(0,0,180);
+#btn2:hover{
+  background: #00a800;
   color: red;
+  font-weight: bold;
 }
 
-/*الأزرار داخل القائمة*/
-.btn3 {
+/*الأزرار داخل القائمة الجانبية*/
+#btn3{
   margin-top: 10px;
   width: 95%;
   height: 40px;
   border: none;
-  background: #0F172A;
+  background: #6192ce;
   color: white;
   font-size: 19px;
   border-radius: 20px;
+  cursor: pointer;
+}
+#btn3:hover{
+  background: #2464b2;
+  color: red;
 }
 
 /*تواصل معنا*/
-      #contact_us{
-        margin-top: 50px;
-        width: 94%;
-        height: 240px;
-        background: #300766;
-        border-radius: 20px;
-        display: none;
-        transition: 1s;
-      }
-      #contact_us:hover{
-        box-shadow: 0px 0px 30px 4px #300766;
-      }
-      #contact_us button{
-        width: 80%;
-        height: 40px;
-        margin-top: 30px;
-        border-radius: 20px;
-        background:#0a4c63;
-        color: red;
-        font-size: 16px;
-        border: none;
-        transition: 0.5s;
-      }
-      #contact_us button:hover{
-        box-shadow: 0px 0px 30px 3px #0a4c63;
-      }
-
-
-.btn3:hover {
-  background: rgb(0, 0, 180);
+#div4{
+  margin-top: 50px;
+  width: 94%;
+  height: 170px;
+  background: #300766;
+  border-radius: 20px;
+  display: none;
+  transition: 1s;
+}
+#div4:hover{
+  box-shadow: 0px 0px 30px 4px #300766;
+}
+#div4 button{
+  width: 80%;
+  height: 40px;
+  margin-top: 30px;
+  border-radius: 20px;
+  background:#0a4c63;
   color: red;
+  font-size: 16px;
+  border: none;
+  transition: 0.5s;
+}
+#div4 button:hover{
+  box-shadow: 0px 0px 20px 3px #4786d1;
 }
 
 /*الصورة العلوية*/
-#img1 {
+#img1{
   width: 100%;
+  margin-top: 40px;
 }
 
-/*الوصف*/
-#div4 {
+/*من نحن*/
+#about{
+  margin-top: 10px;
+  padding: 5px;
   text-align: center;
-}
-
-/*التحكم بالنص الذي فوق الصندوق*/
-legend {
-  width: 50%;
-  padding-left: 6px;
-  padding-right: 6px;
-  background: blue;
   color: white;
-  font-weight: bold;
-  font-size: 13px;
-  border-radius: 10px;
 }
-
-/*تصميم وتطوير مواقع الويب*/
-#a1 {
-  margin-top: 10px;
-  margin-left: 2%;
-  width: 95%;
-  border: 3px dotted red;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-#a1:hover {
-  box-shadow: 0 0 40px 2px red;
-}
-
-#p1 {
-  margin-top: 10px;
-  font-size: 15px;
+#about h2{
   color: red;
 }
-
-/*واجهات ويب عصرية*/
-#a2 {
-  margin-top: 20px;
-  margin-left: 2%;
-  width: 95%;
-  border: 3px dotted purple;
-  border-radius: 10px;
-  transition: 1s;
+#about #p1 {
+  color: rgb(18,202,86);
+}
+#about #p2{
+  color: rgb(207,22,215);
+}
+#about #p3{
+  color: rgb(73,241,206);
+}
+#about #p4{
+  color: rgb(221,157,24);
 }
 
-#a2:hover {
-  box-shadow: 0 0 40px 2px purple;
-}
-
-#p2 {
-  margin-top: 10px;
-  font-size: 15px;
-  color: purple;
-}
-
-/*تطوير مواقع احترافية*/
-#a3 {
-  margin-top: 20px;
-  margin-left: 2%;
-  width: 95%;
-  border: 3px dotted green;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-#a3:hover {
-  box-shadow: 0 0 40px 2px green;
-}
-
-#p3 {
-  margin-top: 10px;
-  font-size: 15px;
-  color: green;
-}
-
-/*تصاميم حديثة وانيقة*/
-#a4 {
-  margin-top: 20px;
-  margin-left: 2%;
-  width: 95%;
-  border: 3px dotted orange;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-#a4:hover {
-  box-shadow: 0 0 40px 2px orange;
-}
-
-#p4 {
-  margin-top: 10px;
-  font-size: 15px;
-  color: orange;
-}
-
-/*مطور مواقع ويب احترافي , ابدأ مشروعك الإلكتروني الآن*/
-#a5 {
-  margin-top: 20px;
-  margin-left: 2%;
-  width: 95%;
-  border: 3px dotted rgb(97,189,227);
-  border-radius: 10px;
-  transition: 1s;
-}
-
-#a5:hover {
-  box-shadow: 0 0 40px 2px rgb(97,189,227);
-}
-
-#p5{
-  margin-top: 10px;
-  font-size: 15px;
-  color: rgb(97,189,227);
-}
-
-/*أيقونات المتابعة*/
-#div5{
-  margin-top: 120px;
-  text-align: center;
-  color: #fff;
-}
-
-/*فيسبوك*/
-.f{
-  margin: 10px;
-  font-size: 28px;
-  color: #fff;
-}
-
-.f:hover{
-  color: blue;
-}
-
-/*يوتيوب*/
-.y{
-  margin: 10px;
-  font-size: 28px;
-  color: #fff;
-}
-
-.y:hover{
-  color: red;
-}
-
-/*انستقرام*/
-.i{
-  margin: 10px;
-  font-size: 28px;
-  color: #fff;
-}
-
-.i:hover{
-  color: #E1306C;
-}
-
-#p6{
+#div5 #p2{
   margin-top: 10px;
   font-size: 11px;
   color: gray;
