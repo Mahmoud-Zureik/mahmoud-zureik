@@ -11,16 +11,32 @@ button{
   padding: 0;
 }
 
-
+/*الصف العلوي*/
 #div1{
-  direction: rtl;
   position: fixed;
+  top: 0;
+  right: 0;
   z-index: 999;
   width: 100%;
   height: 40px;
   background: rgb(69,249,249);
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/*نص المطور*/
+#pmd{
+  margin: 0;
+  font-size: 20px;
+  color: black;
+}
+
+/*زر المزيد*/
+#btn1{
+  margin: 0;
 }
 
 /*زر القائمة الجانبية*/
@@ -38,13 +54,6 @@ button{
 
 #btn1:hover{
   color: red;
-}
-
-/*نص المطور*/
-#pmd{
-  margin-right: 46%;
-  font-size: 20px;
-  color: Black;
 }
 
 a{
@@ -160,7 +169,8 @@ a{
 }
 
 #div5 #p2{
-  margin-top: 10px;
+  margin: 20px;
+  margin-top: 40px;
   font-size: 11px;
   color: gray;
 }
