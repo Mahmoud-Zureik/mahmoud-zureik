@@ -6,56 +6,77 @@
 <title>الموقع تحت التحديث</title>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Tahoma, Arial, sans-serif;
-        background: linear-gradient(135deg, #1e3c72, #2a5298);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        color: white;
-        text-align: center;
-    }
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    color:white;
+    font-family:Tahoma, Arial, sans-serif;
+}
 
-    .box {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 40px;
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 0 20px rgba(0,0,0,0.3);
-        max-width: 500px;
-        width: 90%;
-    }
+.container{
+    text-align:center;
+    padding:40px;
+}
 
-    .icon {
-        font-size: 70px;
-        margin-bottom: 20px;
-    }
+.icon{
+    font-size:70px;
+    animation:float 2s ease-in-out infinite;
+}
 
-    h1 {
-        margin: 0;
-        font-size: 35px;
-    }
+h1{
+    margin:20px 0 10px;
+    font-size:40px;
+}
 
-    p {
-        margin-top: 15px;
-        font-size: 18px;
-        line-height: 1.8;
+p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.loader{
+    width:50px;
+    height:50px;
+    margin:30px auto 0;
+    border:5px solid rgba(255,255,255,0.2);
+    border-top:5px solid #38bdf8;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
     }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
 </style>
 </head>
 
 <body>
 
-<div class="box">
-    <div class="icon">🔧</div>
-    <h1>الموقع تحت التحديث الآن</h1>
+<div class="container">
+    <div class="icon">🚧</div>
+
+    <h1>الموقع تحت التحديث</h1>
+
     <p>
-        نعمل حالياً على تحسين الموقع وإضافة مزايا جديدة.<br>
-        يرجى العودة لاحقاً، شكراً لتفهمكم.
+        نعمل حالياً على تطوير الموقع وتحسين خدماتنا.<br>
+        سنعود إليكم قريباً.
     </p>
+
+    <div class="loader"></div>
 </div>
 
 </body>
