@@ -65,7 +65,7 @@ header{
 
 /*الأزار داخل الصف  العلوي*/
 header button{
-	width: 30%;
+	width: 23%;
 	margin: 5px;
 	margin-top: 15px;
 	font-size: 15px;
@@ -182,7 +182,7 @@ h2{
 
 #service-includes{
 	width: 98%;
-	color: rgb(100 , 100 , 100);
+	color: rgb(150 , 150 , 150);
 	margin-top: 10px;
 	font-size: 14px;
 }
