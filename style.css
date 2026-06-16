@@ -22,7 +22,6 @@ header{
 	right: 0;
 	z-index: 999;
 	width: 98%;
-	height: 120px;
 	margin-right: 1%;
 	margin-top: 8px;
 	border-radius: 10px;
@@ -39,9 +38,12 @@ header{
 /*نص المطور*/
 #pmd{
 	font-family: "Audiowide", sans-serif;
-	margin-right: 3px;
 	margin: 0;
-	font-size: 40px;
+	float: center;
+	padding: 4px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	font-size: 28px;
 	background: linear-gradient(to right, red, blue, white);
 	background-size: 200% auto;
 	background-position: 100% 0%;
@@ -65,25 +67,21 @@ header{
 
 /*الأزار داخل الصف  العلوي*/
 header button{
-	width: 23%;
-	margin: 5px;
-	margin-top: 15px;
-	font-size: 15px;
-	background: #4647AE;
+	margin: 7px;
+	margin-right: 3px;
+	width: 27%;
+	margin-top: 13px;
+	font-size: 14px;
+	margin-bottom: 13px;
 	color: white;
 	border-radius: 10px;
 	padding: 4px;
-	border-top: none;
-	border-left: none;
-	border-right: 0.5px solid white;
-	border-bottom: 0.5px solid white;
+	background: none;
+	border: none;
 	transition: 0.5s;
 }
 header button:hover{
-	border-right: none;
-	border-bottom: none;
-	border-left: 0.5px solid white;
-	border-top: 0.5px solid white;
+	color: rgb(0 , 0 , 255);
 }
 a{
 	text-decoration: none;
@@ -92,7 +90,7 @@ a{
 
 /*تواصل معنا*/
 #contact-us-button{
-	margin-top: 25%;
+	margin-top: 200px;
 	position: fixed;
 	margin-left: 1%;
 	z-index: 999;
@@ -125,7 +123,7 @@ a{
 #img-header{
 	width: 98%;
 	margin-left: 1%;
-	margin-top: 135px;
+	margin-top: 170px;
 	border-radius: 10px;
 }
 
