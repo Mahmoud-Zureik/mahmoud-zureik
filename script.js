@@ -1,22 +1,20 @@
-//اظهار القائمة
-function show() {
-  var n = document.getElementById("div2");
-  n.style = "right:0%;";
-}
-
-//إخفاء القائمة
-function hide() {
-  var n = document.getElementById("div2");
-  n.style = "right:-60%;";
-}
-
 //اظهار واخفاء تواصل معنا
 function contact_us() {
-  var g = document.getElementById("div4");
+	var g = document.getElementById("contact-us-button");
 
-  if (g.style.display == "block") {
-    g.style.display = "none";
+	if (g.style.display == "block") {
+		g.style.display = "none";
   } else {
-    g.style.display = "block";
+		g.style.display = "block";
   }
+}
+
+//رسالة عند الدخول الى الصفحة
+window.onload = function() {
+	alert("أهلا وسهلا بكم في موقعنا");
+}
+
+//رسالة عند الخروج من الصفحة
+window.onbeforeunload = function() {
+	return "هل أنت متأكد انك تريد الخروج ؟";
 }
