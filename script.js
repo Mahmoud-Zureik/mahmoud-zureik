@@ -13,8 +13,3 @@ function contact_us() {
 window.onload = function() {
 	alert("أهلا وسهلا بكم في موقعنا");
 }
-
-//رسالة عند الخروج من الصفحة
-window.onbeforeunload = function() {
-	return "هل أنت متأكد انك تريد الخروج ؟";
-}
