@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('https://fonts.bunny.net/cairo/files/cairo-arabic-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cairo';
+  src: url('https://fonts.bunny.net/cairo/files/cairo-arabic-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cairo';
+  src: url('https://fonts.bunny.net/cairo/files/cairo-arabic-900-normal.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+
+body, button, a {
+  font-family: 'Cairo', Arial, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #B4E1EB);
+  background-attachment: fixed;
+  min-height: 100vh;
+  direction: rtl;
+}
+
+/* ======= HEADER ======= */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 6px rgba(7,94,84,0.08);
+  height: 64px;
+  padding: 0 16px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.header-logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-logo span {
+  font-weight: 700;
+  color: #075E54;
+  font-size: 17px;
+}
+
+.header-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #075E54;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.header-whatsapp:hover {
+  background: #064c44;
+}
+
+.header-menu-btn {
+  background: none;
+  border: none;
+  color: #075E54;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.header-menu-btn:hover {
+  background: rgba(7,94,84,0.1);
+}
+
+/* ======= SIDE MENU ======= */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 50;
+}
+
+.overlay.open {
+  display: block;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 72%;
+  max-width: 320px;
+  background: white;
+  z-index: 51;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+  transform: translateX(-100%);
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.side-menu.open {
+  transform: translateX(0);
+}
+
+.side-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 64px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.side-menu-header span {
+  font-weight: 700;
+  color: #075E54;
+  font-size: 17px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: color 0.2s, background 0.2s;
+}
+
+.close-btn:hover {
+  color: #ef4444;
+  background: #fef2f2;
+}
+
+.side-menu nav {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 4px;
+  flex: 1;
+}
+
+.side-menu nav a {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #374151;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.side-menu nav a:hover,
+.side-menu nav a.active {
+  background: rgba(7,94,84,0.1);
+  color: #075E54;
+}
+
+.side-menu-footer {
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ======= MAIN CONTENT ======= */
+main {
+  padding-top: 64px;
+}
+
+/* ======= HOME PAGE ======= */
+.home {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-img-wrap {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 32px;
+}
+
+.hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 10px 20px rgba(7,94,84,0.2));
+}
+
+.home h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #075E54;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.home h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #374151;
+  background: rgba(255,255,255,0.6);
+  padding: 4px 20px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.home p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.9;
+  background: rgba(255,255,255,0.45);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Cairo', Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.93);
+}
+
+.btn-primary {
+  background: #075E54;
+  color: white;
+  box-shadow: 0 4px 14px rgba(7,94,84,0.35);
+}
+
+.btn-outline {
+  background: white;
+  color: #075E54;
+  border: 2px solid #075E54;
+}
+
+.btn-youtube {
+  background: #FF0000;
+  color: white;
+}
+
+.btn-telegram {
+  background: #2AABEE;
+  color: white;
+}
+
+/* ======= INNER PAGES ======= */
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #075E54;
+  margin-bottom: 28px;
+}
+
+/* About */
+.about-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(7,94,84,0.1);
+}
+
+.about-card h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #075E54;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.9;
+}
+
+/* Services */
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border: 2px solid #075E54;
+  transition: background 0.3s, color 0.3s;
+  cursor: default;
+}
+
+.service-card:hover {
+  background: #075E54;
+  color: white;
+}
+
+.service-card h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #075E54;
+  margin-bottom: 6px;
+}
+
+.service-card:hover h3 {
+  color: white;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.service-card:hover p {
+  color: rgba(255,255,255,0.85);
+}
+
+/* Projects */
+.not-available {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  color: #6b7280;
+  gap: 16px;
+}
+
+.not-available i {
+  font-size: 48px;
+  color: #075E54;
+  opacity: 0.4;
+}
+
+.not-available h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Contact */
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Back button */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 32px;
+  padding: 8px 20px;
+  border: 1px solid #075E54;
+  border-radius: 8px;
+  color: #075E54;
+  background: none;
+  font-family: 'Cairo', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+/* ======= PC ONLY ======= */
+@media (min-width: 768px) {
+  .home h1 { font-size: 3rem; }
+  .home-buttons { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .btn { width: auto; min-width: 160px; }
+  .hero-img-wrap { width: 260px; height: 260px; }
+}

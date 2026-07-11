@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محمود زريق</title>
+  <link rel="icon" href="image1.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <button class="header-menu-btn" onclick="openMenu()" title="القائمة">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="header-logo" href="index.html">
+      <img src="image1.jpg" alt="شعار محمود زريق">
+      <span>محمود زريق</span>
+    </a>
+    <a class="header-whatsapp" href="https://wa.me/963962728182" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      واتسآب
+    </a>
+  </header>
+
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+  <div class="side-menu" id="side-menu">
+    <div class="side-menu-header">
+      <span>القائمة</span>
+      <button class="close-btn" onclick="closeMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="services.html">خدماتنا</a>
+      <a href="projects.html">مشاريعي</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div class="side-menu-footer">© 2025 محمود زريق. جميع الحقوق محفوظة.</div>
+  </div>
+
+  <main>
+    <div class="home">
+      <div class="hero-img-wrap">
+        <img src="image.png" alt="محمود زريق مطور ويب">
+      </div>
+
+      <h1>محمود زريق / Mahmoud Zureik</h1>
+      <h2>Web Developer</h2>
+
+      <p>
+        محمود زريق ، مطور واجهات أمامية من سوريا ، أعمل على تصميم وتطوير مواقع ويب حديثة تتميز بالأداء ، والجودة ، وتجربة المستخدم المميزة ، مع الإعتماد على أحدث التقنيات لتحويل الأفكار إلى منتجات رقمية احترافية
+      </p>
+
+      <div class="home-buttons">
+        <a class="btn btn-primary" href="contact.html">
+          <i class="fa-solid fa-comments"></i>
+          تواصل معي
+        </a>
+        <a class="btn btn-outline" href="projects.html">
+          <i class="fa-solid fa-briefcase"></i>
+          استعرض مشاريعي
+        </a>
+        <a class="btn btn-youtube" href="https://youtube.com/@mahmoudzureik-code" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+          يوتيوب
+        </a>
+        <a class="btn btn-telegram" href="https://t.me/web_developers_404" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+          تيليجرام
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

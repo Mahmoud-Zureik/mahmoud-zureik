@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن - محمود زريق</title>
+  <link rel="icon" href="image1.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <button class="header-menu-btn" onclick="openMenu()" title="القائمة">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="header-logo" href="index.html">
+      <img src="image1.jpg" alt="شعار محمود زريق">
+      <span>محمود زريق</span>
+    </a>
+    <a class="header-whatsapp" href="https://wa.me/963962728182" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      واتسآب
+    </a>
+  </header>
+
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+  <div class="side-menu" id="side-menu">
+    <div class="side-menu-header">
+      <span>القائمة</span>
+      <button class="close-btn" onclick="closeMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="services.html">خدماتنا</a>
+      <a href="projects.html">مشاريعي</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div class="side-menu-footer">© 2025 محمود زريق. جميع الحقوق محفوظة.</div>
+  </div>
+
+  <main>
+    <div class="page">
+      <h1 class="page-title">من نحن</h1>
+
+      <div class="about-card">
+        <h2>محمود زريق</h2>
+        <p>
+          مطور واجهات أمامية من سوريا ، أمتلك خبرة في تصميم وتطوير مواقع ويب حديثة وسريعة ، مع التركيز على تقديم تجربة مستخدم مميزة وتحويل الأفكار إلى مشاريع احترافية باستخدام أحدث التقنيات
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h2>من نحن</h2>
+        <p>
+          متخصصون في تطوير واجهات أمامية عصرية وبناء مواقع ويب حديثة تجمع بين الأداء ، والتصميم الأنيق ، وسهولة الاستخدام
+          <br><br>
+          هدفنا هو تقديم حلول رقمية احترافية تساعد عملاءنا على تحقيق أهدافهم وبناء حضور قوي على الإنترنت
+        </p>
+      </div>
+
+      <a class="back-btn" href="index.html">
+        <i class="fa-solid fa-arrow-right"></i>
+        رجوع
+      </a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
