@@ -6,7 +6,6 @@ body, button, a {
   font-weight: 400;
   font-style: normal;
 }
-}
 
 body {
   background: linear-gradient(to bottom, #ffffff, #B4E1EB);
@@ -15,7 +14,7 @@ body {
   direction: rtl;
 }
 
-/* ======= HEADER ======= */
+/* ======= HEADER الصف العلوي ======= */
 header {
   display: flex;
   align-items: center;
@@ -47,7 +46,7 @@ header {
 .header-logo span {
   font-weight: 700;
   color: #075E54;
-  font-size: 17px;
+  font-size: 28px;
 }
 
 .header-whatsapp {
@@ -59,7 +58,7 @@ header {
   border: none;
   border-radius: 999px;
   padding: 8px 14px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
@@ -79,7 +78,7 @@ header {
 }
 .header-menu-btn:hover { background: rgba(7,94,84,0.1); }
 
-/* ======= SIDE MENU ======= */
+/* ======= SIDE MENU   القائمة======= */
 .overlay {
   display: none;
   position: fixed;
@@ -112,12 +111,12 @@ header {
   height: 64px;
   border-bottom: 1px solid #e5e7eb;
 }
-.side-menu-header span { font-weight: 700; color: #075E54; font-size: 17px; }
+.side-menu-header span { font-weight: 700; color: #075E54; font-size: 20px; }
 
 .close-btn {
   background: none;
   border: none;
-  font-size: 22px;
+  font-size: 23px;
   color: #6b7280;
   cursor: pointer;
   padding: 8px;
@@ -139,7 +138,7 @@ header {
   text-align: right;
   padding: 13px 18px;
   border-radius: 12px;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 700;
   color: #374151;
   text-decoration: none;
@@ -157,10 +156,10 @@ header {
   color: #9ca3af;
 }
 
-/* ======= MAIN ======= */
+/* ======= MAIN القسم الوسط ======= */
 main { padding-top: 64px; }
 
-/* ======= HOME ======= */
+/* ======= HOME  الصفحة الرئيسية======= */
 .home {
   max-width: 680px;
   margin: 0 auto;
@@ -218,7 +217,7 @@ main { padding-top: 64px; }
   width: 100%;
 }
 
-/* ======= BUTTONS ======= */
+/* ======= BUTTONS الأزرار ======= */
 .btn {
   display: flex;
   align-items: center;
@@ -227,9 +226,7 @@ main { padding-top: 64px; }
   width: 100%;
   padding: 13px 20px;
   border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: 'Cairo', Arial, sans-serif;
+  font-size: 1.3rem;
   text-decoration: none;
   cursor: pointer;
   border: none;
@@ -241,7 +238,7 @@ main { padding-top: 64px; }
 .btn-youtube  { background: #FF0000; color: white; }
 .btn-telegram { background: #2AABEE; color: white; }
 
-/* ======= INNER PAGES ======= */
+/* ======= INNER PAGES  الصفحات الداخلية======= */
 .page {
   max-width: 680px;
   margin: 0 auto;
@@ -323,9 +320,9 @@ main { padding-top: 64px; }
 }
 
 /* Contact */
-.contact-buttons { display: flex; flex-direction: column; gap: 11px; }
+.contact-buttons {display: flex; flex-direction: column; gap: 18px; }
 
-/* Back button */
+/* Back button زر العودة */
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -336,11 +333,9 @@ main { padding-top: 64px; }
   border-radius: 8px;
   color: #075E54;
   background: none;
-  font-family: 'Cairo', Arial, sans-serif;
-  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 1rem;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 .back-btn:hover { background: #ef4444; color: white; border-color: #ef4444; }
