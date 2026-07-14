@@ -190,7 +190,7 @@ main { padding-top: 64px; }
   line-height: 1.3;
 }
 .home h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #374151;
   background: rgba(255,255,255,0.65);
@@ -200,7 +200,7 @@ main { padding-top: 64px; }
   display: inline-block;
 }
 .home p {
-  font-size: 0.97rem;
+  font-size: 1.2rem;
   color: #4b5563;
   line-height: 1.95;
   background: rgba(255,255,255,0.5);
@@ -285,7 +285,7 @@ main { padding-top: 64px; }
 .service-card:hover p       { color: rgba(255,255,255,0.85); }
 
 /* Projects */
-.projects-grid { display: flex; flex-direction: column; gap: 18px; }
+.projects-grid { display: flex; flex-direction: column; gap: 30px; }
 
 .project-card {
   background: white;
