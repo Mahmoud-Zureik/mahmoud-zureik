@@ -21,3 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+function no() {
+  alert("عذرا هذه الصفحة غير متوفرة حاليا")
+}
