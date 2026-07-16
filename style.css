@@ -236,7 +236,6 @@ main { padding-top: 64px; }
 .btn-primary  { background: #075E54; color: white; box-shadow: 0 4px 14px rgba(7,94,84,0.3); }
 .btn-outline  { background: white; color: #075E54; border: 1px solid #075E54; }
 .btn-outline:hover{background: #075E54; color: #fff;}
-.btn-youtube  { background: #FF0000; color: white; }
 .btn-telegram { background: #2AABEE; color: white; }
 
 /* ======= INNER PAGES  الصفحات الداخلية======= */
