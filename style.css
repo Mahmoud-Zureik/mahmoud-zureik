@@ -300,10 +300,12 @@ main {
   background: #2AABEE;
   color: white;
 }
+
 .btn-youtube {
   background: #C02929;
   color: #fff;
 }
+
 /* ======= INNER PAGES  الصفحات الداخلية======= */
 .page {
   max-width: 680px;
