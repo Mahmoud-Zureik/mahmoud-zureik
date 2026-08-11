@@ -257,6 +257,7 @@ main {
   width: 100%;
 }
 #btn-follow{
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -285,7 +286,7 @@ main {
   background: #075E54;
   color: white;
   box-shadow: 0 4px 14px rgba(7, 94, 84, 0.3);
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .btn-outline {
