@@ -4,89 +4,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>محمود زريق</title>
-  <link rel="icon" href="image1.jpg">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+
+  <title>الموقع قيد التحديث | محمود زريق</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Tahoma, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 700px;
+      padding: 30px 20px;
+      animation: show 0.8s ease;
+    }
+
+    .icon {
+      width: 85px;
+      height: 85px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      background: #eef2ff;
+      color: #6366f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+    }
+
+    .small-title {
+      color: #6366f1;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #6366f1;
+    }
+
+    .description {
+      color: #6b7280;
+      font-size: 18px;
+      line-height: 1.9;
+      margin-bottom: 30px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 30px;
+      background: #f1f5f9;
+      color: #374151;
+      font-size: 14px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #6366f1;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes show {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.7);
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .description {
+        font-size: 16px;
+      }
+
+      .icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  
-  <header>
-    <button class="header-menu-btn" onclick="openMenu()" title="القائمة">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <a class="header-logo" href="index.html">
-      <img src="image1.jpg" alt="شعار محمود زريق">
-      <span>محمود زريق</span>
-    </a>
-    <a class="header-whatsapp" href="https://wa.me/963962728182" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-      واتسآب
-    </a>
-  </header>
-  
-  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-  <div class="side-menu" id="side-menu">
-    <div class="side-menu-header">
-      <span>القائمة</span>
-      <button class="close-btn" onclick="closeMenu()">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
+
+  <main class="content">
+
+    <div class="icon">
+      ⚙️
     </div>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="about.html">من نحن</a>
-      <a href="services.html">خدماتنا</a>
-      <a href="projects.html">مشاريعي</a>
-      <a href="contact.html">تواصل معنا</a>
-    </nav>
-    <div class="side-menu-footer">©محمود زريق.جميع الحقوق محفوظة</div>
-  </div>
-  
-  <main>
-    <div class="home">
-      <div class="hero-img-wrap">
-        <img src="image.png" alt="محمود زريق مطور ويب">
-      </div>
-      
-      <h1>محمود زريق / Mahmoud Zureik</h1>
-      <h2>Web Developer</h2>
-      
-      <p>
-        محمود زريق ، مطور واجهات أمامية من سوريا ، أعمل على تصميم وتطوير مواقع ويب حديثة تتميز بالأداء ، والجودة ، وتجربة المستخدم المميزة ، مع الإعتماد على أحدث التقنيات لتحويل الأفكار إلى منتجات رقمية احترافية
-      </p>
-      
-      <div class="home-buttons">
-        <a class="btn btn-primary" href="contact.html">
-          <i class="fa-solid fa-comments"></i>
-          تواصل معي
-        </a>
-        <a class="btn btn-primary" href="projects.html">
-          <i class="fa-solid fa-diagram-project"></i>
-          اكتشف مشاريعي
-        </a>
-        
-        <div id="btn-follow">
-          <a class="btn btn-telegram" href="https://t.me/web_developers_404" target="_blank">
-            <i class="fa-brands fa-telegram"></i>
-            تيليجرام
-          </a>
-          
-          <a class="btn btn-youtube" href="https://youtube.com/channel/UCvbXfC0LwUgtxDksR5hGgdA?si=YmXe1lt_Jb0HrX2L" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-            يوتيوب
-          </a>
-        </div>
-      </div>
+
+    <div class="small-title">
+      Mahmoud Zureik
     </div>
+
+    <h1>
+      الموقع <span>قيد التحديث</span>
+    </h1>
+
+    <p class="description">
+      أعمل حالياً على تطوير وتحسين الموقع
+      <br>
+      لتقديم تجربة أفضل وتصميم أكثر احترافية.
+      <br>
+      سأعود إليك قريباً بإصدار جديد.
+    </p>
+
+    <div class="status">
+      <span class="dot"></span>
+      جاري العمل على الموقع
+    </div>
+
   </main>
-  
-  <script src="script.js"></script>
+
 </body>
 
 </html>
