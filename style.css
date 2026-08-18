@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +11,7 @@ button,
 a {
   font-family: "Beiruti", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -54,7 +56,7 @@ header {
 .header-logo span {
   font-weight: 700;
   color: #075E54;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .header-whatsapp {
@@ -88,9 +90,6 @@ header {
   transition: background 0.2s;
 }
 
-.header-menu-btn:hover {
-  background: rgba(7, 94, 84, 0.1);
-}
 
 /* ======= SIDE MENU   القائمة======= */
 .overlay {
@@ -153,7 +152,6 @@ header {
 
 .close-btn:hover {
   color: #ef4444;
-  background: #fef2f2;
 }
 
 .side-menu nav {
@@ -307,7 +305,7 @@ main {
 }
 
 .btn-youtube {
-  background: #C02929;
+  background: #ef4444;
   color: #fff;
 }
 
@@ -467,7 +465,10 @@ main {
   flex-direction: column;
   gap: 18px;
 }
-
+.contact-buttons a{
+  padding: 25px 0;
+  font-size: 25px;
+}
 /* Back button زر العودة */
 .back-btn {
   display: inline-flex;
