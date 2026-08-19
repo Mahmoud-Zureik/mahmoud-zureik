@@ -1,267 +1,301 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مشاريعي</title>
-    <link rel="icon" href="image1.jpg" />
-    <link rel="stylesheet" href="style.css" />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مشاريعي</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <button
-        class="header-menu-btn"
-        onclick="openMenu()"
-        title="القائمة"
-        type="button"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+ </head>
 
-      <a class="header-logo" href="index.html">
-        <img src="image1.jpg" alt="شعار محمود زريق" />
-        <span>محمود زريق</span>
-      </a>
+ <body>
+  <!-- Header -->
+  <header>
+   <button
+    class="header-menu-btn"
+    onclick="openMenu()"
+    title="القائمة"
+    type="button"
+   >
+    <i class="fa-solid fa-bars"></i>
+   </button>
 
-      <a
-        class="header-whatsapp"
-        href="https://wa.me/963962728182"
+   <a class="header-logo" href="index.html">
+    <span>محمود زريق</span>
+   </a>
+
+   <a
+    class="header-whatsapp"
+    href="https://wa.me/963962728182"
+    target="_blank"
+    rel="noopener noreferrer"
+   >
+    <i class="fa-brands fa-whatsapp"></i>
+    واتسآب
+   </a>
+  </header>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="side-menu">
+   <div class="side-menu-header">
+    <span>القائمة</span>
+
+    <button
+     class="close-btn"
+     onclick="closeMenu()"
+     type="button"
+     title="إغلاق القائمة"
+    >
+     <i class="fa-solid fa-xmark"></i>
+    </button>
+   </div>
+
+   <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">من نحن</a>
+    <a href="services.html">خدماتنا</a>
+    <a href="projects.html">مشاريعي</a>
+    <a href="contact.html">تواصل معنا</a>
+   </nav>
+
+   <div class="side-menu-footer">محمود زريق. جميع الحقوق محفوظة</div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+   <div class="page">
+    <h1 class="page-title">
+     <i class="fa-solid fa-code"></i>
+     مشاريعي
+    </h1>
+
+    <div class="projects-grid">
+     <!-- منصة تعلم HTML -->
+     <div class="project-card">
+      <div class="project-img-wrap">
+       <img src="imgs-projects/learn-html.png" />
+      </div>
+
+      <div class="project-body">
+       <!--start-->
+
+       <h2>منصة تعلم HTML</h2>
+
+       <p>
+        منصة تعليمية بسيطة تساعدك على تعلم لغة HTML من الصفر بطريقة سهلة ومنظمة
+        تحتوي على دروس وشروحات عملية تساعدك على فهم أساسيات HTML وتطبيقها خطوة
+        بخطوة حتى تتمكن من إنشاء صفحات ويب بنفسك
+       </p>
+
+       <a
+        class="btn btn-primary"
+        href="https://www.appcreator24.com/app4158401-04nhf1"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        <i class="fa-brands fa-whatsapp"></i>
-        واتسآب
-      </a>
-    </header>
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        تحميل التطبيق
+       </a>
+      </div>
+     </div>
 
-    <!-- Overlay -->
-    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-
-    <!-- Side Menu -->
-    <div class="side-menu" id="side-menu">
-      <div class="side-menu-header">
-        <span>القائمة</span>
-
-        <button
-          class="close-btn"
-          onclick="closeMenu()"
-          type="button"
-          title="إغلاق القائمة"
-        >
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+     <!-- Code Editor -->
+     <div class="project-card">
+      <div class="project-img-wrap">
+       <img src="imgs-projects/code-editor.png" />
       </div>
 
-      <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="about.html">من نحن</a>
-        <a href="services.html">خدماتنا</a>
-        <a href="projects.html">مشاريعي</a>
-        <a href="contact.html">تواصل معنا</a>
-      </nav>
+      <div class="project-body">
+       <h2>Code Editor</h2>
 
-      <div class="side-menu-footer">محمود زريق. جميع الحقوق محفوظة</div>
+       <p>
+        محرر أكواد HTML هو تطبيق يتيح للمستخدم كتابة وتحرير وتجربة أكواد HTML
+        بسهولة، من خلال واجهة بسيطة وسريعة الاستخدام، مع إمكانية معاينة النتائج
+        مباشرة، مما يجعله مناسبًا للمبتدئين والمطورين لتعلم وتطوير صفحات الويب
+        بكل سهولة.
+       </p>
+
+       <a
+        class="btn btn-primary"
+        href="https://mahmoud-zureik.github.io/code-editor/"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        معاينة التطبيق
+       </a>
+
+       <a
+        class="btn btn-primary"
+        href="https://www.appcreator24.com/app4142452-f1in7h"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        تحميل التطبيق
+       </a>
+
+       <a
+        class="btn btn-primary"
+        href="https://github.com/Mahmoud-Zureik/code-editor.git"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        ملفات الموقع
+       </a>
+      </div>
+     </div>
+
+     <!-- الرقية الشرعية -->
+     <div class="project-card">
+      <div class="project-img-wrap">
+       <img src="imgs-projects/kr.png" />
+      </div>
+
+      <div class="project-body">
+       <h2>الرقية الشرعية</h2>
+
+       <p>
+        الرقية الشرعية هو تطبيق يضم آيات الرقية الشرعية من القرآن الكريم بواجهة
+        بسيطة وسهلة الاستخدام، مما يتيح للمستخدم قراءة آيات الرقية بسهولة وفي أي
+        وقت، مع تصميم منظم يوفر تجربة استخدام مريحة وسلسة.
+       </p>
+
+       <a
+        class="btn btn-primary"
+        href="https://mahmoud-zureik.github.io/rk/"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        معاينة التطبيق
+       </a>
+
+       <a
+        class="btn btn-primary"
+        href="https://www.appcreator24.com/app4127151-2zxerv"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        تحميل التطبيق
+       </a>
+
+       <a
+        class="btn btn-primary"
+        href="https://github.com/Mahmoud-Zureik/rk.git"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        ملفات الموقع
+       </a>
+      </div>
+     </div>
+
+     <!-- Cube Flight -->
+     <div class="project-card">
+      <div class="project-img-wrap">
+       <img src="imgs-projects/game.png" />
+      </div>
+
+      <div class="project-body">
+       <h2>Cube Flight</h2>
+
+       <p>
+        Cube Flight هي لعبة بسيطة مبرمجة باستخدام HTML وCSS وJavaScript، يتحكم
+        فيها اللاعب بمكعب طائر يتحرك في الفضاء ويحاول تجنب العوائق الخضراء
+        القادمة من الأعلى والأسفل.
+       </p>
+
+       <a
+        class="btn btn-primary"
+        href="https://mahmoud-zureik.github.io/flight-cube/"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        معاينة التطبيق
+       </a>
+
+       <a
+        class="btn btn-primary"
+        href="https://www.appcreator24.com/app4144630-xc03ue"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        تحميل التطبيق
+       </a>
+
+       <a
+        class="btn btn-primary"
+        href="https://github.com/Mahmoud-Zureik/flight-cube.git"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        ملفات الموقع
+       </a>
+      </div>
+     </div>
+
+     <!-- آلة حاسبة -->
+     <div class="project-card">
+      <div class="project-img-wrap">
+       <img src="imgs-projects/calculator.png" />
+      </div>
+
+      <div class="project-body">
+       <h2>آلة حاسبة</h2>
+
+       <p>
+        آلة حاسبة بسيطة وسهلة الاستخدام لإجراء العمليات الحسابية الأساسية الأربع
+       </p>
+
+       <a
+        class="btn btn-primary"
+        href="https://mahmoud-zureik.github.io/calculator/"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        معاينة الموقع
+       </a>
+
+       <a
+        class="btn btn-primary"
+        href="https://github.com/Mahmoud-Zureik/calculator.git"
+        target="_blank"
+        rel="noopener noreferrer"
+       >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        ملفات الموقع
+       </a>
+      </div>
+     </div>
     </div>
 
-    <!-- Main Content -->
-    <main>
-      <div class="page">
-        <h1 class="page-title">
-          <i class="fa-solid fa-code"></i>
-          مشاريعي
-        </h1>
+    <!--end-->
 
-        <div class="projects-grid">
-          <!-- Code Editor -->
-          <div class="project-card">
-            <div class="project-img-wrap">
-              <img src="m.png" />
-            </div>
+    <!-- Back Button -->
+    <a class="back-btn" href="index.html">
+     <i class="fa-solid fa-arrow-right"></i>
+     رجوع
+    </a>
+   </div>
+  </main>
 
-            <div class="project-body">
-              <h2>Code Editor</h2>
-
-              <p>
-                محرر أكواد HTML هو تطبيق يتيح للمستخدم كتابة وتحرير وتجربة أكواد
-                HTML بسهولة، من خلال واجهة بسيطة وسريعة الاستخدام، مع إمكانية
-                معاينة النتائج مباشرة، مما يجعله مناسبًا للمبتدئين والمطورين
-                لتعلم وتطوير صفحات الويب بكل سهولة.
-              </p>
-
-              <a
-                class="btn btn-primary"
-                href="https://mahmoud-zureik.github.io/code-editor/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                معاينة التطبيق
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://www.appcreator24.com/app4142452-f1in7h"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                تحميل التطبيق
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://github.com/Mahmoud-Zureik/code-editor.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                ملفات الموقع
-              </a>
-            </div>
-          </div>
-
-          <!-- الرقية الشرعية -->
-          <div class="project-card">
-            <div class="project-img-wrap">
-              <img src="m.png" />
-            </div>
-
-            <div class="project-body">
-              <h2>الرقية الشرعية</h2>
-
-              <p>
-                الرقية الشرعية هو تطبيق يضم آيات الرقية الشرعية من القرآن الكريم
-                بواجهة بسيطة وسهلة الاستخدام، مما يتيح للمستخدم قراءة آيات
-                الرقية بسهولة وفي أي وقت، مع تصميم منظم يوفر تجربة استخدام مريحة
-                وسلسة.
-              </p>
-
-              <a
-                class="btn btn-primary"
-                href="https://mahmoud-zureik.github.io/rk/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                معاينة التطبيق
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://www.appcreator24.com/app4127151-2zxerv"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                تحميل التطبيق
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://github.com/Mahmoud-Zureik/rk.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                ملفات الموقع
-              </a>
-            </div>
-          </div>
-
-          <!-- Cube Flight -->
-          <div class="project-card">
-            <div class="project-img-wrap">
-              <img src="m.png" />
-            </div>
-
-            <div class="project-body">
-              <h2>Cube Flight</h2>
-
-              <p>
-                Cube Flight هي لعبة بسيطة مبرمجة باستخدام HTML وCSS وJavaScript،
-                يتحكم فيها اللاعب بمكعب طائر يتحرك في الفضاء ويحاول تجنب العوائق
-                الخضراء القادمة من الأعلى والأسفل.
-              </p>
-
-              <a
-                class="btn btn-primary"
-                href="https://mahmoud-zureik.github.io/flight-cube/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                معاينة التطبيق
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://www.appcreator24.com/app4144630-xc03ue"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                تحميل التطبيق
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://github.com/Mahmoud-Zureik/flight-cube.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                ملفات الموقع
-              </a>
-            </div>
-          </div>
-
-          <!-- آلة حاسبة -->
-          <div class="project-card">
-            <div class="project-img-wrap">
-              <img src="m.png" />
-            </div>
-
-            <div class="project-body">
-              <h2>آلة حاسبة</h2>
-
-              <a
-                class="btn btn-primary"
-                href="https://mahmoud-zureik.github.io/calculator/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                معاينة الموقع
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://github.com/Mahmoud-Zureik/calculator.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                ملفات الموقع
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Back Button -->
-        <a class="back-btn" href="index.html">
-          <i class="fa-solid fa-arrow-right"></i>
-          رجوع
-        </a>
-      </div>
-    </main>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-  </body>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+ </body>
 </html>
