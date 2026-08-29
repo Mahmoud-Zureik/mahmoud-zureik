@@ -10,11 +10,10 @@
 html {
   scroll-behavior: smooth;
 }
-::selection{
+::selection {
   color: #fff;
   background: #075e54;
 }
-
 
 ul {
   list-style: none;
@@ -123,7 +122,7 @@ header h2 {
 .navbar ul li a {
   margin: 0;
   color: #000;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
 }
 
 /*home*/
@@ -149,7 +148,7 @@ header h2 {
   margin: auto;
 }
 
-.btn-home a{
+.btn-home a {
   width: 47%;
   background: #075e54;
   padding: 10px 2px;
@@ -166,14 +165,13 @@ header h2 {
   border: 1px solid #075e54;
 }
 
-.btn-home #btn-contact{
+.btn-home #btn-contact {
   color: #075e54;
 }
 
 .btn-home #btn-contact:hover,
 #btn-contact a:hover {
   background: #075e54;
-
   color: #fff;
 }
 
