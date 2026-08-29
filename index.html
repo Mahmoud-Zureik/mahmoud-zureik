@@ -6,7 +6,7 @@
     <title>Mahmoud-Zureik # Web Developer</title>
 
     <!--icon-->
-    <link rel="icon" href="imgs/logo2.png" />
+    <link rel="icon" href="imgs/logo.png" />
     <!--css-->
     <link rel="stylesheet" href="style.css" />
     <!--font awesome-->
@@ -16,7 +16,7 @@
     />
   </head>
 
-  <body>
+  <body onload="welcome()">
     <header>
       <h2><span style="color: #075e54">Mahmoud</span> Zureik</h2>
 
@@ -54,18 +54,14 @@
               احترافية
             </p>
 
-            <ul class="btn-home">
-              <li title="تواصل معي" id="btn-contact">
-                <a href="#contact"
+            <div class="btn-home">
+                <a href="#contact" id="btn-contact"
                   ><i class="fa-solid fa-comments"></i>تواصل معي</a
                 >
-              </li>
-              <li title="مشاريعي">
                 <a href="#projects"
                   ><i class="fa-solid fa-diagram-project"></i>اكتشف مشاريعي</a
                 >
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -161,21 +157,18 @@
               وتطبيقها خطوة بخطوة حتى تتمكن من إنشاء صفحات ويب بنفسك
             </p>
 
-            <ul class="btn-projects" dir="ltr">
-              <li>
+            <div class="btn-projects" dir="ltr">
                 <a href="https://www.appcreator24.com/app4158401-04nhf1"
                   ><i class="fa-solid fa-arrow-up-right-from-square"></i>تحميل
                   المنصة</a
                 >
-              </li>
-              <li>
+              
                 <a href="projects.html"
                   ><i class="fa-solid fa-diagram-project"></i>اكتشف المزيد من
                   المشاريع</a
                 >
-              </li>
-            </ul>
-          </div>
+            </div>
+          </>
         </div>
       </div>
     </main>
@@ -215,6 +208,8 @@
       <p>محمود زريق.جميع الحقوق محفوظة©2026</p>
     </footer>
 
+    <!--sweetalert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--script-->
     <script src="index.js"></script>
   </body>
