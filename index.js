@@ -16,7 +16,17 @@ function welcome() {
   });
 }
 
-const navbar = document.querySelector(".navbar");
+$(document).ready(function(){
+  $("#show").click(function(){
+    $('.navbar').slideDown(200);
+  })
+});
+$(document).ready(function(){
+  $("#closing").click(function(){
+    $('.navbar').slideUp(200);
+  })
+});
+
 const bars = document.querySelector(".fa-bars");
 const xmark = document.querySelector(".fa-xmark");
 const list = document.querySelector(".list");
@@ -24,5 +34,4 @@ const list = document.querySelector(".list");
 list.addEventListener("click", () => {
   bars.classList.toggle("active");
   xmark.classList.toggle("active");
-  navbar.classList.toggle("active");
 });

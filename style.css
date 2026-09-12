@@ -68,8 +68,7 @@ header h2 {
   display: block;
   cursor: pointer;
   font-size: 25px;
-  width: 45px;
-  height: 45px;
+  padding: 13px;
   position: relative;
 }
 
@@ -86,7 +85,6 @@ header h2 {
 
 .list i.active {
   display: block;
-  transform: rotate(180deg);
 }
 
 .navbar {
@@ -97,12 +95,7 @@ header h2 {
   left: 0;
   width: 100%;
   display: none;
-  transition: 0.3s ease;
   border-bottom: 1px solid #cbcbcb;
-}
-
-.navbar.active {
-  display: block;
 }
 
 .navbar ul {
@@ -354,7 +347,7 @@ footer p {
   }
 
   #home h2 {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   .btn-home {
@@ -362,7 +355,7 @@ footer p {
   }
 
   #projects img {
-    width: 70%;
+    width: 80%;
   }
 
   #projects .btn-projects {
@@ -370,7 +363,10 @@ footer p {
     display: flex;
     justify-content: space-between;
   }
-
+  #projects .btn-projects a{
+    margin: 0 5px;
+  }
+  
   .btn-projects li {
     margin: 5px;
   }
