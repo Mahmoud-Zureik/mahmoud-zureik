@@ -258,22 +258,7 @@ footer p {
   text-align: center;
   font-size: 15px;
 }
-footer #btn-ai{
-  position: fixed;
-  bottom: 10px;
-  left: 20px;
-  background: rgb(7, 94, 84,.95);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  padding: 3px 5px;
-  font-size: 16px;
-  transition: 0.3s ease;
-}
-footer #btn-ai:active{
-  transform: scale(96%);
-  background: #075e54;
-}
+
 /*projects file*/
 .projects-file .container img {
   width: 100%;
@@ -301,11 +286,6 @@ footer #btn-ai:active{
 
 .projects-file .container a i {
   margin-right: 10px;
-}
-/*ai-file*/
-#ai{
-  width: 100%;
-  height: 100vh;
 }
 
 /*laptop*/

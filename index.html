@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Mahmoud-Zureik | Web Developer</title>
+    <title>Mahmoud-Zureik | محمود زريق</title>
 
     <!-- Open Graph -->
     <meta property="og:title" content="Mahmoud Zureik | Web Developer" />
@@ -244,16 +244,44 @@
       </ul>
 
       <p>محمود زريق.جميع الحقوق محفوظة©2026</p>
-
-      <button id="btn-ai" onclick="location.href = 'ai.html'">
-        المساعد الشخصي
-        <i class="fa-solid fa-robot"></i>
-      </button>
     </footer>
     <!-- sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- script -->
     <script src="index.js"></script>
+    <!--ai-->
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "8FslE5W_Pjqyig50Ejqn8";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
   </body>
 </html>
