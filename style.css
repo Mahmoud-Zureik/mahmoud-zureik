@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 ::selection {
   color: #fff;
   background: #075e54;
@@ -289,7 +290,7 @@ footer p {
 }
 
 /*laptop*/
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   header {
     position: fixed;
     width: 100%;
@@ -357,9 +358,16 @@ footer p {
   .btn-home {
     width: 80%;
   }
-
+  #projects .container .content {
+    width: 50%;
+  }
+  #projects .container .content1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
   #projects img {
-    width: 80%;
+    width: 50%;
   }
 
   #projects .btn-projects {
@@ -367,6 +375,7 @@ footer p {
     display: flex;
     justify-content: space-between;
   }
+
   #projects .btn-projects a {
     margin: 0 5px;
   }
