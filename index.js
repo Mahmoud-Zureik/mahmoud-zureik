@@ -1,3 +1,4 @@
+//رسالة ترحيبية
 function welcome() {
   Swal.fire({
     title: "مرحباً بك 👋",
@@ -16,22 +17,17 @@ function welcome() {
   });
 }
 
+//التحكم في اظهار واخفاء القائمة
 $(document).ready(function() {
-  $("#show").click(function() {
-    $('.navbar').slideDown(200);
-  })
-});
-$(document).ready(function() {
-  $("#closing").click(function() {
-    $('.navbar').slideUp(200);
-  })
-});
+  $("#menu-open").click(function() {
+    $(".navbar").slideDown(200);
+    $("#menu-open").removeClass("active");
+    $("#menu-close").addClass("active");
+  });
 
-const bars = document.querySelector(".fa-bars");
-const xmark = document.querySelector(".fa-xmark");
-const list = document.querySelector(".list");
-
-list.addEventListener("click", () => {
-  bars.classList.toggle("active");
-  xmark.classList.toggle("active");
+  $("#menu-close").click(function() {
+    $(".navbar").slideUp(200);
+    $("#menu-close").removeClass("active");
+    $("#menu-open").addClass("active");
+  });
 });

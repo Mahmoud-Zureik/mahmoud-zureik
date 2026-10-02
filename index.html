@@ -1,40 +1,37 @@
 <!doctype html>
+
 <html lang="ar">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Mahmoud-Zureik | محمود زريق</title>
-
-  <!-- Open Graph -->
+  <title>Mahmoud-Zureik | محمود زريق</title> <!-- Open Graph -->
   <meta property="og:title" content="Mahmoud Zureik | Web Developer" />
   <meta property="og:description" content="Frontend Web Developer" />
   <meta property="og:image" content="https://mahmoud-zureik.github.io/mahmoud-zureik/imgs/image.png" />
   <meta property="og:url" content="https://mahmoud-zureik.github.io/mahmoud-zureik/" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Mahmoud Zureik" />
-
-  <!-- Icon -->
-  <link rel="icon" href="imgs/logo.png" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome -->
+  <meta property="og:site_name" content="Mahmoud Zureik" /> <!-- Icon -->
+  <link rel="icon" href="imgs/logo.png" /> <!-- CSS -->
+  <link rel="stylesheet" href="style.css" /> <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <!-jQuery-->
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
-      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous">
+  </script>
 </head>
 
 <body onload="welcome()">
   <header>
-    <h2><a href="#home"><span style="color: #075e54">Mahmoud</span> Zureik</a></h2>
+    <h2>
+      <a href="#home">
+        <span style="color: #075e54">Mahmoud</span> Zureik
+      </a>
+    </h2>
 
-    <div class="list">
-      <i title="القائمة" class="fa-solid fa-bars active" id="show"></i>
-      <i title="اغلاق" class="fa-solid fa-xmark" id="closing"></i>
+    <div class="menu-toggle">
+      <i title="القائمة" class="fa-solid fa-bars active" id="menu-open"></i>
+      <i title="اغلاق" class="fa-solid fa-xmark" id="menu-close"></i>
     </div>
 
     <nav class="navbar">
@@ -46,19 +43,22 @@
         <li><a href="#contact">تواصل معي</a></li>
       </ul>
     </nav>
-  </header>
 
-  <!-- main -->
-  <main>
-    <!-- home -->
+  </header> <!-- main -->
+  <main><!-- home -->
     <div id="home">
-      <div class="container">
-        <div class="image">
+
+      <div class="home-container">
+
+        <div class="profile-image">
           <img src="imgs/image.png" alt="mahmoud zureik" />
         </div>
 
-        <div class="content">
-          <h2><span style="color: #075e54">Mahmoud </span>Zureik</h2>
+        <div class="hero-content">
+
+          <h2>
+            <span style="color: #075e54">Mahmoud </span>Zureik
+          </h2>
 
           <p dir="rtl">
             محمود زريق ، مطور واجهات أمامية من سوريا ، أعمل على تصميم وتطوير
@@ -67,23 +67,31 @@
             احترافية
           </p>
 
-          <div class="btn-home">
-            <a href="#contact" id="btn-contact">
+          <div class="hero-actions">
+
+            <a href="#contact" id="contact-button">
               <i class="fa-solid fa-comments"></i>تواصل معي
             </a>
 
             <a href="#projects">
               <i class="fa-solid fa-diagram-project"></i>اكتشف مشاريعي
             </a>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
     <!-- about -->
     <div id="about">
-      <div class="container" dir="rtl">
-        <div class="content">
+
+      <div class="about-container" dir="rtl">
+
+        <div class="about-content">
+
           <h3>نبذة عني</h3>
 
           <p>
@@ -102,7 +110,8 @@
             خلال التطبيق العملي وبناء المشاريع.
           </p>
 
-          <div class="content1">
+          <div class="about-details">
+
             <p>
               التخصص: Frontend Developer
               <br />
@@ -110,59 +119,80 @@
               <br />
               التقنيات: HTML • CSS • JavaScript • DOM • Events • Local Storage
             </p>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
-    <!-- service -->
+    <!-- services -->
     <div id="service" dir="rtl">
-      <div class="container">
-        <div class="content">
+
+      <div class="services-container">
+
+        <div class="services-content">
+
           <h3>الخدمات</h3>
 
           <h4>تصميم واجهات المستخدم</h4>
+
           <p>
             تصميم واجهات مستخدم عصرية وجذابة، تجمع بين المظهر الاحترافي وسهولة
             الاستخدام، مع الاهتمام بتجربة المستخدم وتناسق الألوان والعناصر
           </p>
 
           <h4>تطوير المواقع الإلكترونية</h4>
+
           <p>
             تطوير مواقع إلكترونية حديثة وسريعة ومتجاوبة مع مختلف الأجهزة،
             باستخدام تقنيات حديثة لضمان أداء جيد وتجربة استخدام مميزة
           </p>
+
         </div>
 
-        <div class="content1">
+        <div class="services-details">
+
           <h4>تحسين أداء المواقع</h4>
+
           <p>
             تحسين سرعة الموقع وأدائه، وتقليل أوقات التحميل، ومعالجة المشكلات
             التي تؤثر على تجربة المستخدم، للوصول إلى موقع أكثر سرعة واستقرارًا
           </p>
 
           <h4>الدعم والتطوير المستمر</h4>
+
           <p>
             تقديم الدعم والصيانة والتحديثات المستمرة للمواقع، مع إضافة
             التحسينات والتطويرات اللازمة لضمان استقرار الموقع ومواكبته
             للاحتياجات الجديدة
           </p>
+
         </div>
+
       </div>
+
     </div>
 
     <!-- projects -->
     <div id="projects" dir="rtl">
-      <div class="container">
-        <div class="content">
+
+      <div class="projects-container">
+
+        <div class="project-content">
+
           <h3>مشاريعي</h3>
 
-          <div class="image">
+          <div class="project-image">
             <img src="imgs/code-editor.png" alt="learn-html" />
           </div>
+
         </div>
 
-        <div class="content1">
+        <div class="project-info">
+
           <h4>محرر الأكواد</h4>
 
           <p>
@@ -171,29 +201,34 @@
             الأكواد وتجربتها وتطوير صفحات الويب بكل سهولة.
           </p>
 
-          <div class="btn-projects" dir="ltr">
+          <div class="project-actions" dir="ltr">
+
             <a href="https://mahmoud-zureik.github.io/code-editor/">
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
               الذهاب الى الموقع
             </a>
 
             <a href="projects.html">
-              <i class="fa-solid fa-diagram-project"></i>اكتشف المزيد من
-              المشاريع
+              <i class="fa-solid fa-diagram-project"></i>
+              اكتشف المزيد من المشاريع
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
 
-  <!-- footer -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main> <!-- footer -->
   <footer dir="rtl" id="contact">
     <h3>محمود زريق لبرمجة وتصميم مواقع الويب</h3>
 
     <h4>وسائل التواصل :</h4>
 
-    <ul>
+    <ul class="social-links">
+
       <li title="واتساب">
         <a href="https://wa.me/963962728182">
           <i class="fa-brands fa-whatsapp"></i>
@@ -229,48 +264,62 @@
           <i class="fa-brands fa-google"></i>
         </a>
       </li>
+
     </ul>
 
     <p>محمود زريق.جميع الحقوق محفوظة©2026</p>
-  </footer>
-  <!-- sweetalert -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <!-- script -->
-  <script src="index.js"></script>
-  <!--ai-->
+  </footer> <!-- sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- script -->
+  <script src="index.js"></script> <!-- ai -->
   <script>
-      (function () {
-        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-          window.chatbase = (...arguments) => {
-            if (!window.chatbase.q) {
-              window.chatbase.q = [];
-            }
-            window.chatbase.q.push(arguments);
-          };
-          window.chatbase = new Proxy(window.chatbase, {
-            get(target, prop) {
-              if (prop === "q") {
-                return target.q;
-              }
-              return (...args) => target(prop, ...args);
-            },
-          });
-        }
-        const onLoad = function () {
-          const script = document.createElement("script");
-          script.src = "https://www.chatbase.co/embed.min.js";
-          script.id = "8FslE5W_Pjqyig50Ejqn8";
-          script.domain = "www.chatbase.co";
-          document.body.appendChild(script);
+    (function () {
+
+      if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+
+        window.chatbase = (...arguments) => {
+
+          if (!window.chatbase.q) {
+            window.chatbase.q = [];
+          }
+
+          window.chatbase.q.push(arguments);
         };
-        if (document.readyState === "complete") {
-          onLoad();
-        } else {
-          window.addEventListener("load", onLoad);
-        }
-      })();
-    </script>
+
+        window.chatbase = new Proxy(window.chatbase, {
+
+          get(target, prop) {
+
+            if (prop === "q") {
+              return target.q;
+            }
+
+            return (...args) => target(prop, ...args);
+          },
+
+        });
+
+      }
+
+      const onLoad = function () {
+
+        const script = document.createElement("script");
+
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "8FslE5W_Pjqyig50Ejqn8";
+        script.domain = "www.chatbase.co";
+
+        document.body.appendChild(script);
+      };
+
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+
+    })();
+  </script>
 </body>
 
 </html>

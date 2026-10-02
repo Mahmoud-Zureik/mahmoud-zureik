@@ -27,11 +27,6 @@ a {
   height: 100%;
 }
 
-.container {
-  width: 98%;
-  margin: auto;
-}
-
 p {
   font-size: 1.1rem;
   color: #4b5563;
@@ -48,7 +43,7 @@ h3 {
   text-shadow: 1px 1px 1px black;
 }
 
-/*header*/
+/* Header */
 header {
   position: fixed;
   width: 100%;
@@ -60,6 +55,7 @@ header {
   align-items: center;
   padding: 0 1rem;
   color: #fff;
+  z-index: 1000;
 }
 
 header h2 {
@@ -71,7 +67,7 @@ header h2 a {
   color: #000;
 }
 
-.list {
+.menu-toggle {
   display: block;
   cursor: pointer;
   font-size: 25px;
@@ -79,7 +75,7 @@ header h2 a {
   position: relative;
 }
 
-.list i {
+.menu-toggle i {
   position: absolute;
   inset: 0;
   margin: auto;
@@ -90,12 +86,11 @@ header h2 a {
   color: #000;
 }
 
-.list i.active {
+.menu-toggle i.active {
   display: block;
 }
 
 .navbar {
-  width: 100%;
   position: absolute;
   background: rgb(255, 255, 255, 0.95);
   top: 80px;
@@ -125,13 +120,18 @@ header h2 a {
   padding: 0.8rem 0;
 }
 
-/*home*/
+/* Home */
 #home {
   width: 100%;
   text-align: center;
 }
 
-#home .image img {
+.home-container {
+  width: 98%;
+  margin: auto;
+}
+
+.profile-image img {
   width: 90%;
   margin-top: 80px;
 }
@@ -142,14 +142,14 @@ header h2 a {
   text-shadow: 1px 1px 1px black;
 }
 
-.btn-home {
+.hero-actions {
   width: 95%;
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
 
-.btn-home a {
+.hero-actions a {
   width: 47%;
   background: #075e54;
   padding: 10px 2px;
@@ -157,63 +157,103 @@ header h2 a {
   border-radius: 5px;
 }
 
-.btn-home a i {
+.hero-actions a i {
   padding-right: 10px;
 }
 
-.btn-home #btn-contact {
+.hero-actions #contact-button {
   background: none;
   border: 1px solid #075e54;
-}
-
-.btn-home #btn-contact {
   color: #075e54;
 }
 
-.btn-home #btn-contact:hover,
-#btn-contact a:hover {
+.hero-actions #contact-button:hover,
+#contact-button a:hover {
   background: #075e54;
   color: #fff;
 }
 
-/*about*/
+/* About */
 #about {
   width: 100%;
   background: rgb(240, 240, 240);
   margin-top: 30px;
 }
 
-/*service*/
+.about-container {
+  width: 98%;
+  margin: auto;
+}
+
+.about-content {
+  width: 100%;
+}
+
+.about-details {
+  width: 100%;
+}
+
+/* Services */
+#service {
+  width: 100%;
+}
+
+.services-container {
+  width: 98%;
+  margin: auto;
+}
+
+.services-content {
+  width: 100%;
+}
+
+.services-details {
+  width: 100%;
+}
+
 #service h4 {
   padding: 3px 18px;
 }
 
-/*projects*/
+/* Projects */
 #projects {
   width: 100%;
   background: rgb(240, 240, 240);
 }
 
-#projects .container .content .image {
+.projects-container {
+  width: 98%;
+  margin: auto;
+}
+
+.project-content {
+  width: 100%;
+}
+
+.project-image {
   text-align: center;
 }
 
-#projects img {
+.project-image img {
   width: 95%;
   border-radius: 10px;
+}
+
+.project-info {
+  width: 100%;
 }
 
 #projects h4 {
   padding: 3px 18px;
 }
 
-#projects .btn-projects {
+.project-actions {
   width: 95%;
   margin: auto;
   text-align: center;
 }
 
-.btn-projects a {
+.project-actions a {
   width: 100%;
   background: #075e54;
   padding: 10px 2px;
@@ -222,11 +262,11 @@ header h2 a {
   color: #fff;
 }
 
-.btn-projects a i {
+.project-actions a i {
   margin-right: 10px;
 }
 
-/*footer*/
+/* Footer */
 footer {
   width: 100%;
   background: rgb(0, 20, 18);
@@ -244,7 +284,7 @@ footer h4 {
   font-size: 20px;
 }
 
-footer ul {
+.social-links {
   width: 90%;
   display: flex;
   align-items: center;
@@ -252,15 +292,15 @@ footer ul {
   margin: auto;
 }
 
-footer ul li {
+.social-links li {
   transition: 0.3s ease;
 }
 
-footer ul li:hover {
+.social-links li:hover {
   transform: scale(120%);
 }
 
-footer ul li a i {
+.social-links li a i {
   font-size: 30px;
   color: #ccc;
 }
@@ -272,22 +312,22 @@ footer p {
   font-size: 15px;
 }
 
-/*projects file*/
-.projects-file .container img {
+/* Projects File */
+.projects-file .projects-container img {
   width: 100%;
 }
 
-.projects-file .container h3 {
+.projects-file .projects-container h3 {
   font-size: 25px;
 }
 
-.projects-file .container h4 {
+.projects-file .projects-container h4 {
   padding: 18px;
   margin: 3px 0;
   font-size: 20px;
 }
 
-.projects-file .container a {
+.projects-file .projects-container a {
   width: 95%;
   background: #075e54;
   padding: 10px 2px;
@@ -297,11 +337,11 @@ footer p {
   color: #fff;
 }
 
-.projects-file .container a i {
+.projects-file .projects-container a i {
   margin-right: 10px;
 }
 
-/*laptop*/
+/* Laptop */
 @media (min-width: 800px) {
   header {
     position: fixed;
@@ -319,7 +359,7 @@ footer p {
     color: #000;
   }
 
-  .list {
+  .menu-toggle {
     display: none;
   }
 
@@ -353,13 +393,16 @@ footer p {
     color: #075e54;
   }
 
-  .container {
+  .home-container,
+  .about-container,
+  .services-container,
+  .projects-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  #home .image img {
+  .profile-image img {
     width: 70%;
   }
 
@@ -367,55 +410,55 @@ footer p {
     margin-top: 80px;
   }
 
-  .btn-home {
+  .hero-actions {
     width: 80%;
   }
 
-  #projects .container .content {
+  .project-content {
     width: 50%;
   }
 
-  #projects .container .content1 {
+  .project-info {
     width: 50%;
     display: flex;
     flex-direction: column;
   }
 
-  #projects img {
+  .project-image img {
     width: 50%;
   }
 
-  #projects .btn-projects {
+  .project-actions {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
-  #projects .btn-projects a {
+  .project-actions a {
     margin: 0 5px;
   }
 
-  .btn-projects li {
+  .project-actions li {
     margin: 5px;
   }
 
-  .projects-file .container {
+  .projects-file .projects-container {
     display: block;
   }
 
-  .projects-file .container img {
+  .projects-file .projects-container img {
     width: 50%;
     margin: auto;
     display: flex;
   }
 
-  .projects-file .container a,
-  .projects-file .container p {
+  .projects-file .projects-container a,
+  .projects-file .projects-container p {
     width: 60%;
     margin: auto;
   }
 
-  footer ul {
+  .social-links {
     width: 25%;
   }
 }
