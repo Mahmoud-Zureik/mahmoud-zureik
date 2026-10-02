@@ -297,7 +297,7 @@ footer h4 {
 }
 
 .social-links li:hover {
-  transform: scale(120%);
+  transform: scale(1.2) rotate(360deg);
 }
 
 .social-links li a i {
