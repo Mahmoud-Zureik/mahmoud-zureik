@@ -1,256 +1,245 @@
 <!doctype html>
 <html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Mahmoud-Zureik | محمود زريق</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Mahmoud Zureik | Web Developer" />
-    <meta property="og:description" content="Frontend Web Developer" />
-    <meta
-      property="og:image"
-      content="https://mahmoud-zureik.github.io/mahmoud-zureik/imgs/image.png"
-    />
-    <meta
-      property="og:url"
-      content="https://mahmoud-zureik.github.io/mahmoud-zureik/"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Mahmoud Zureik" />
+  <title>Mahmoud-Zureik | محمود زريق</title>
 
-    <!-- Icon -->
-    <link rel="icon" href="imgs/logo.png" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mahmoud Zureik | Web Developer" />
+  <meta property="og:description" content="Frontend Web Developer" />
+  <meta property="og:image" content="https://mahmoud-zureik.github.io/mahmoud-zureik/imgs/image.png" />
+  <meta property="og:url" content="https://mahmoud-zureik.github.io/mahmoud-zureik/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mahmoud Zureik" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Icon -->
+  <link rel="icon" href="imgs/logo.png" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <!-jQuery-->
-    <script
-      src="https://code.jquery.com/jquery-4.0.0.min.js"
-      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-  <body onload="welcome()">
-    <header>
-      <h2><span style="color: #075e54">Mahmoud</span> Zureik</h2>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-jQuery-->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+</head>
 
-      <div class="list">
-        <i title="القائمة" class="fa-solid fa-bars active" id="show"></i>
-        <i title="اغلاق" class="fa-solid fa-xmark" id="closing"></i>
-      </div>
+<body onload="welcome()">
+  <header>
+    <h2><a href="#home"><span style="color: #075e54">Mahmoud</span> Zureik</a></h2>
 
-      <nav class="navbar">
-        <ul dir="rtl">
-          <li><a href="#home">الصفحة الرئيسية</a></li>
-          <li><a href="#about">نبذة عن</a></li>
-          <li><a href="#service">الخدمات</a></li>
-          <li><a href="#projects">مشاريعي</a></li>
-          <li><a href="#contact">تواصل معي</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="list">
+      <i title="القائمة" class="fa-solid fa-bars active" id="show"></i>
+      <i title="اغلاق" class="fa-solid fa-xmark" id="closing"></i>
+    </div>
 
-    <!-- main -->
-    <main>
-      <!-- home -->
-      <div id="home">
-        <div class="container">
-          <div class="image">
-            <img src="imgs/image.png" alt="mahmoud zureik" />
-          </div>
-
-          <div class="content">
-            <h2><span style="color: #075e54">Mahmoud </span>Zureik</h2>
-
-            <p dir="rtl">
-              محمود زريق ، مطور واجهات أمامية من سوريا ، أعمل على تصميم وتطوير
-              مواقع ويب حديثة تتميز بالأداء ، والجودة ، وتجربة المستخدم المميزة
-              ، مع الإعتماد على أحدث التقنيات لتحويل الأفكار إلى منتجات رقمية
-              احترافية
-            </p>
-
-            <div class="btn-home">
-              <a href="#contact" id="btn-contact">
-                <i class="fa-solid fa-comments"></i>تواصل معي
-              </a>
-
-              <a href="#projects">
-                <i class="fa-solid fa-diagram-project"></i>اكتشف مشاريعي
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- about -->
-      <div id="about">
-        <div class="container" dir="rtl">
-          <div class="content">
-            <h3>نبذة عني</h3>
-
-            <p>
-              أنا مطور Frontend متخصص في تطوير مواقع الويب وبناء واجهات مستخدم
-              حديثة، تفاعلية ومتجاوبة باستخدام HTML وCSS وJavaScript. أمتلك خبرة
-              سنة في مجال تطوير الويب، وخلال هذه الفترة اكتسبت خبرة عملية من
-              خلال بناء وتطوير العديد من المشاريع والتطبيقات. أهتم بكتابة أكواد
-              منظمة وواضحة، وبناء واجهات سهلة الاستخدام ومتجاوبة مع مختلف أحجام
-              الشاشات والأجهزة. لدي خبرة في التعامل مع JavaScript وDOM والأحداث
-              (Events)
-              <br /><br />
-              بالإضافة إلى استخدام Local Storage لحفظ وإدارة البيانات داخل
-              تطبيقات الويب. أركز في عملي على تحويل الأفكار إلى تطبيقات ويب
-              عملية ومنظمة، مع الاهتمام بالتفاصيل وجودة الكود وتجربة المستخدم.
-              كما أواصل تطوير مهاراتي في JavaScript وFrontend Development من
-              خلال التطبيق العملي وبناء المشاريع.
-            </p>
-
-            <div class="content1">
-              <p>
-                التخصص: Frontend Developer
-                <br />
-                الخبرة: سنة في تطوير الويب
-                <br />
-                التقنيات: HTML • CSS • JavaScript • DOM • Events • Local Storage
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- service -->
-      <div id="service" dir="rtl">
-        <div class="container">
-          <div class="content">
-            <h3>الخدمات</h3>
-
-            <h4>تصميم واجهات المستخدم</h4>
-            <p>
-              تصميم واجهات مستخدم عصرية وجذابة، تجمع بين المظهر الاحترافي وسهولة
-              الاستخدام، مع الاهتمام بتجربة المستخدم وتناسق الألوان والعناصر
-            </p>
-
-            <h4>تطوير المواقع الإلكترونية</h4>
-            <p>
-              تطوير مواقع إلكترونية حديثة وسريعة ومتجاوبة مع مختلف الأجهزة،
-              باستخدام تقنيات حديثة لضمان أداء جيد وتجربة استخدام مميزة
-            </p>
-          </div>
-
-          <div class="content1">
-            <h4>تحسين أداء المواقع</h4>
-            <p>
-              تحسين سرعة الموقع وأدائه، وتقليل أوقات التحميل، ومعالجة المشكلات
-              التي تؤثر على تجربة المستخدم، للوصول إلى موقع أكثر سرعة واستقرارًا
-            </p>
-
-            <h4>الدعم والتطوير المستمر</h4>
-            <p>
-              تقديم الدعم والصيانة والتحديثات المستمرة للمواقع، مع إضافة
-              التحسينات والتطويرات اللازمة لضمان استقرار الموقع ومواكبته
-              للاحتياجات الجديدة
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- projects -->
-      <div id="projects" dir="rtl">
-        <div class="container">
-          <div class="content">
-            <h3>مشاريعي</h3>
-
-            <div class="image">
-              <img src="imgs/code-editor.png" alt="learn-html" />
-            </div>
-          </div>
-
-          <div class="content1">
-            <h4>محرر الأكواد</h4>
-
-            <p>
-              موقع بسيط لتحرير وتجربة أكواد HTML مباشرة من المتصفح، مع إمكانية
-              معاينة النتيجة فورًا. يتميز بواجهة سهلة وسريعة تساعدك على كتابة
-              الأكواد وتجربتها وتطوير صفحات الويب بكل سهولة.
-            </p>
-
-            <div class="btn-projects" dir="ltr">
-              <a href="https://mahmoud-zureik.github.io/code-editor/">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                الذهاب الى الموقع
-              </a>
-
-              <a href="projects.html">
-                <i class="fa-solid fa-diagram-project"></i>اكتشف المزيد من
-                المشاريع
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- footer -->
-    <footer dir="rtl" id="contact">
-      <h3>محمود زريق لبرمجة وتصميم مواقع الويب</h3>
-
-      <h4>وسائل التواصل :</h4>
-
-      <ul>
-        <li title="واتساب">
-          <a href="https://wa.me/963962728182">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-        </li>
-
-        <li title="تيليجرام">
-          <a href="https://t.me/mahmoudzureik">
-            <i class="fa-brands fa-telegram"></i>
-          </a>
-        </li>
-
-        <li title="فيسبوك">
-          <a href="https://www.facebook.com/share/1DYNHjky9s/">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </li>
-
-        <li title="انتستقرام">
-          <a href="https://www.instagram.com/md.codes?igsi=Mzg0emF4ZTNsYzAy">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-
-        <li title="غيت هاب">
-          <a href="https://github.com/Mahmoud-Zureik">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-
-        <li title="البريد الالكتروني">
-          <a href="mailto:mdcodes@gmail.com">
-            <i class="fa-brands fa-google"></i>
-          </a>
-        </li>
+    <nav class="navbar">
+      <ul dir="rtl">
+        <li><a href="#home">الصفحة الرئيسية</a></li>
+        <li><a href="#about">نبذة عن</a></li>
+        <li><a href="#service">الخدمات</a></li>
+        <li><a href="#projects">مشاريعي</a></li>
+        <li><a href="#contact">تواصل معي</a></li>
       </ul>
+    </nav>
+  </header>
 
-      <p>محمود زريق.جميع الحقوق محفوظة©2026</p>
-    </footer>
-    <!-- sweetalert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- main -->
+  <main>
+    <!-- home -->
+    <div id="home">
+      <div class="container">
+        <div class="image">
+          <img src="imgs/image.png" alt="mahmoud zureik" />
+        </div>
 
-    <!-- script -->
-    <script src="index.js"></script>
-    <!--ai-->
-    <script>
+        <div class="content">
+          <h2><span style="color: #075e54">Mahmoud </span>Zureik</h2>
+
+          <p dir="rtl">
+            محمود زريق ، مطور واجهات أمامية من سوريا ، أعمل على تصميم وتطوير
+            مواقع ويب حديثة تتميز بالأداء ، والجودة ، وتجربة المستخدم المميزة
+            ، مع الإعتماد على أحدث التقنيات لتحويل الأفكار إلى منتجات رقمية
+            احترافية
+          </p>
+
+          <div class="btn-home">
+            <a href="#contact" id="btn-contact">
+              <i class="fa-solid fa-comments"></i>تواصل معي
+            </a>
+
+            <a href="#projects">
+              <i class="fa-solid fa-diagram-project"></i>اكتشف مشاريعي
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div class="container" dir="rtl">
+        <div class="content">
+          <h3>نبذة عني</h3>
+
+          <p>
+            أنا مطور Frontend متخصص في تطوير مواقع الويب وبناء واجهات مستخدم
+            حديثة، تفاعلية ومتجاوبة باستخدام HTML وCSS وJavaScript. أمتلك خبرة
+            سنة في مجال تطوير الويب، وخلال هذه الفترة اكتسبت خبرة عملية من
+            خلال بناء وتطوير العديد من المشاريع والتطبيقات. أهتم بكتابة أكواد
+            منظمة وواضحة، وبناء واجهات سهلة الاستخدام ومتجاوبة مع مختلف أحجام
+            الشاشات والأجهزة. لدي خبرة في التعامل مع JavaScript وDOM والأحداث
+            (Events)
+            <br /><br />
+            بالإضافة إلى استخدام Local Storage لحفظ وإدارة البيانات داخل
+            تطبيقات الويب. أركز في عملي على تحويل الأفكار إلى تطبيقات ويب
+            عملية ومنظمة، مع الاهتمام بالتفاصيل وجودة الكود وتجربة المستخدم.
+            كما أواصل تطوير مهاراتي في JavaScript وFrontend Development من
+            خلال التطبيق العملي وبناء المشاريع.
+          </p>
+
+          <div class="content1">
+            <p>
+              التخصص: Frontend Developer
+              <br />
+              الخبرة: سنة في تطوير الويب
+              <br />
+              التقنيات: HTML • CSS • JavaScript • DOM • Events • Local Storage
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- service -->
+    <div id="service" dir="rtl">
+      <div class="container">
+        <div class="content">
+          <h3>الخدمات</h3>
+
+          <h4>تصميم واجهات المستخدم</h4>
+          <p>
+            تصميم واجهات مستخدم عصرية وجذابة، تجمع بين المظهر الاحترافي وسهولة
+            الاستخدام، مع الاهتمام بتجربة المستخدم وتناسق الألوان والعناصر
+          </p>
+
+          <h4>تطوير المواقع الإلكترونية</h4>
+          <p>
+            تطوير مواقع إلكترونية حديثة وسريعة ومتجاوبة مع مختلف الأجهزة،
+            باستخدام تقنيات حديثة لضمان أداء جيد وتجربة استخدام مميزة
+          </p>
+        </div>
+
+        <div class="content1">
+          <h4>تحسين أداء المواقع</h4>
+          <p>
+            تحسين سرعة الموقع وأدائه، وتقليل أوقات التحميل، ومعالجة المشكلات
+            التي تؤثر على تجربة المستخدم، للوصول إلى موقع أكثر سرعة واستقرارًا
+          </p>
+
+          <h4>الدعم والتطوير المستمر</h4>
+          <p>
+            تقديم الدعم والصيانة والتحديثات المستمرة للمواقع، مع إضافة
+            التحسينات والتطويرات اللازمة لضمان استقرار الموقع ومواكبته
+            للاحتياجات الجديدة
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects" dir="rtl">
+      <div class="container">
+        <div class="content">
+          <h3>مشاريعي</h3>
+
+          <div class="image">
+            <img src="imgs/code-editor.png" alt="learn-html" />
+          </div>
+        </div>
+
+        <div class="content1">
+          <h4>محرر الأكواد</h4>
+
+          <p>
+            موقع بسيط لتحرير وتجربة أكواد HTML مباشرة من المتصفح، مع إمكانية
+            معاينة النتيجة فورًا. يتميز بواجهة سهلة وسريعة تساعدك على كتابة
+            الأكواد وتجربتها وتطوير صفحات الويب بكل سهولة.
+          </p>
+
+          <div class="btn-projects" dir="ltr">
+            <a href="https://mahmoud-zureik.github.io/code-editor/">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              الذهاب الى الموقع
+            </a>
+
+            <a href="projects.html">
+              <i class="fa-solid fa-diagram-project"></i>اكتشف المزيد من
+              المشاريع
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer dir="rtl" id="contact">
+    <h3>محمود زريق لبرمجة وتصميم مواقع الويب</h3>
+
+    <h4>وسائل التواصل :</h4>
+
+    <ul>
+      <li title="واتساب">
+        <a href="https://wa.me/963962728182">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </li>
+
+      <li title="تيليجرام">
+        <a href="https://t.me/mahmoudzureik">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </li>
+
+      <li title="فيسبوك">
+        <a href="https://www.facebook.com/share/1DYNHjky9s/">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+
+      <li title="انتستقرام">
+        <a href="https://www.instagram.com/md.codes?igsi=Mzg0emF4ZTNsYzAy">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+
+      <li title="غيت هاب">
+        <a href="https://github.com/Mahmoud-Zureik">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+
+      <li title="البريد الالكتروني">
+        <a href="mailto:mdcodes@gmail.com">
+          <i class="fa-brands fa-google"></i>
+        </a>
+      </li>
+    </ul>
+
+    <p>محمود زريق.جميع الحقوق محفوظة©2026</p>
+  </footer>
+  <!-- sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- script -->
+  <script src="index.js"></script>
+  <!--ai-->
+  <script>
       (function () {
         if (!window.chatbase || window.chatbase("getState") !== "initialized") {
           window.chatbase = (...arguments) => {
@@ -282,5 +271,6 @@
         }
       })();
     </script>
-  </body>
+</body>
+
 </html>

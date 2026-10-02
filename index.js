@@ -16,13 +16,13 @@ function welcome() {
   });
 }
 
-$(document).ready(function(){
-  $("#show").click(function(){
+$(document).ready(function() {
+  $("#show").click(function() {
     $('.navbar').slideDown(200);
   })
 });
-$(document).ready(function(){
-  $("#closing").click(function(){
+$(document).ready(function() {
+  $("#closing").click(function() {
     $('.navbar').slideUp(200);
   })
 });

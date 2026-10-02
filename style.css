@@ -67,6 +67,10 @@ header h2 {
   text-shadow: 1px 1px 1px black;
 }
 
+header h2 a {
+  color: #000;
+}
+
 .list {
   display: block;
   cursor: pointer;
@@ -248,6 +252,14 @@ footer ul {
   margin: auto;
 }
 
+footer ul li {
+  transition: 0.3s ease;
+}
+
+footer ul li:hover {
+  transform: scale(120%);
+}
+
 footer ul li a i {
   font-size: 30px;
   color: #ccc;
@@ -358,14 +370,17 @@ footer p {
   .btn-home {
     width: 80%;
   }
+
   #projects .container .content {
     width: 50%;
   }
+
   #projects .container .content1 {
     width: 50%;
     display: flex;
     flex-direction: column;
   }
+
   #projects img {
     width: 50%;
   }
