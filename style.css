@@ -290,21 +290,21 @@ footer {
 }
 
 footer h3 {
-  color: #0e8275;
+  color: #139d8d;
 }
 
 footer h4 {
-  color: #0e8275;
+  color: #139d8d;
   padding: 30px 18px;
   font-size: 20px;
 }
 footer #footer-content {
   font-size: 15px;
   font-weight: 400;
-  color: gray;
+  color: #fff;
 }
 .social-links {
-  width: 90%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
