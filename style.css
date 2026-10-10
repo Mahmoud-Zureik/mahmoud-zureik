@@ -32,7 +32,7 @@ p {
   color: #4b5563;
   line-height: 1.7;
   letter-spacing: 0;
-  word-spacing: 2px;
+  word-spacing: 1px;
   padding: 18px;
   margin-bottom: 30px;
 }
@@ -177,9 +177,7 @@ header h2 a {
   font-size: 23px;
   text-shadow: 1px 1px 1px black;
 }
-#home p {
-  word-spacing: 4px;
-}
+
 .hero-actions {
   width: 95%;
   display: flex;
@@ -304,7 +302,7 @@ footer #footer-content {
   color: #fff;
 }
 .social-links {
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
