@@ -1,160 +1,228 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#05080c" />
+        <meta name="color-scheme" content="dark" />
+        <meta
+            name="description"
+            content="الموقع الشخصي لمحمود زريق، مطور واجهات ويب مهتم ببناء تجارب رقمية حديثة ومتجاوبة."
+        />
+        <title>Mahmoud Zureik | MDCODES</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#05080c">
-    <meta name="color-scheme" content="dark">
-    <meta name="description"
-        content="الموقع الشخصي لمحمود زريق، مطور واجهات ويب مهتم ببناء تجارب رقمية حديثة ومتجاوبة.">
-    <title>Mahmoud Zureik | MDCODES</title>
+        <!-- Icon -->
+        <link rel="icon" href="imgs/logo.svg" />
 
-    <!-- Icon -->
-    <link rel="icon" href="imgs/logo.svg">
+        <!-- Fonts and Icons -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
 
-    <!-- Fonts and Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div id="scroll-progress"></div>
+            <a
+                class="brand"
+                href="#home"
+                aria-label="MDCODES - الصفحة الرئيسية"
+            >
+                <span>MD</span>CODES
+            </a>
 
-<body>
-    <!-- Header -->
-    <header>
-        <div id="scroll-progress"></div>
-        <a class="brand" href="#home" aria-label="MDCODES - الصفحة الرئيسية">
-            <span>MD</span>CODES
-        </a>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="فتح القائمة"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+            <nav class="navbar" id="navbar">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">نبذة عني</a>
+                <a href="#skills">مهاراتي</a>
+                <a href="#contact">التواصل</a>
+            </nav>
+        </header>
 
-        <nav class="navbar" id="navbar">
-            <a href="#home">الرئيسية</a>
-            <a href="#about">نبذة عني</a>
-            <a href="#skills">مهاراتي</a>
-            <a href="#contact">التواصل</a>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Home -->
-        <section id="home" class="hero section">
-            <div class="hero-content">
-                <p class="eyebrow"><span class="status-dot"></span> أهلاً بك في مساحتي الرقمية</p>
-                <h1>أنا <span class="accent">محمود زريق</span></h1>
-                <h2>Frontend Web Developer</h2>
-                <p class="hero-description">
-                    أهتم بتطوير واجهات ويب حديثة ومتجاوبة، وأحب تحويل الأفكار إلى تجارب رقمية واضحة وسهلة الاستخدام.
-                </p>
-                <div class="hero-actions">
-                    <a class="button primary" href="#about"><i class="fa-solid fa-user"></i> تعرّف عليّ</a>
-                    <a class="button secondary" href="#contact"><i class="fa-regular fa-paper-plane"></i> تواصل معي</a>
-                </div>
-                <p class="code-note"><span>&lt;</span> Learning, building, improving <span>/&gt;</span></p>
-            </div>
-
-            <div class="hero-visual">
-                <div class="visual-glow"></div>
-                <div class="image-frame">
-                    <img src="imgs/image.png" alt="صورة محمود زريق الشخصية" fetchpriority="high">
-                </div>
-                <div class="floating-tag tag-top"><i class="fa-solid fa-code"></i> Clean Code</div>
-                <div class="floating-tag tag-bottom"><i class="fa-solid fa-laptop-code"></i> Web Development</div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section">
-            <div class="section-heading">
-                <p class="eyebrow">01 / ABOUT ME</p>
-                <h2>نبذة <span class="accent">عني</span></h2>
-            </div>
-            <div class="about-card">
-                <div class="about-mark"><i class="fa-solid fa-terminal"></i></div>
-                <div>
-                    <h3>مطور ويب شغوف بالتعلّم</h3>
-                    <p>
-                        أنا محمود زريق، مطور واجهات أمامية أعمل على بناء صفحات ويب باستخدام HTML وCSS وJavaScript.
-                        أهتم بتنسيق الواجهات، وتجربة المستخدم، وجعل المواقع مناسبة لمختلف أحجام الشاشات.
-                        أحرص على تطوير مهاراتي باستمرار، وتجربة الأدوات والمكتبات التي تساعدني على كتابة كود واضح ومنظم.
+        <main>
+            <!-- Home -->
+            <section id="home" class="hero section">
+                <div class="hero-content">
+                    <p class="eyebrow">
+                        <span class="status-dot"></span> أهلاً بك في مساحتي
+                        الرقمية
+                    </p>
+                    <h1>أنا <span class="accent">محمود زريق</span></h1>
+                    <h2>Frontend Web Developer</h2>
+                    <p class="hero-description">
+                        أهتم بتطوير واجهات ويب حديثة ومتجاوبة، وأحب تحويل
+                        الأفكار إلى تجارب رقمية واضحة وسهلة الاستخدام.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#about"
+                            ><i class="fa-solid fa-user"></i> تعرّف عليّ</a
+                        >
+                        <a class="button secondary" href="#contact"
+                            ><i class="fa-regular fa-paper-plane"></i> تواصل
+                            معي</a
+                        >
+                    </div>
+                    <p class="code-note">
+                        <span>&lt;</span> Learning, building, improving
+                        <span>/&gt;</span>
                     </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <div class="section-heading">
-                <p class="eyebrow">02 / TECH STACK</p>
-                <h2>مهاراتي <span class="accent">التقنية</span></h2>
-                <p class="section-description">التقنيات التي أستخدمها في رحلتي لتطوير الويب.</p>
-            </div>
+                <div class="hero-visual">
+                    <div class="visual-glow"></div>
+                    <div class="image-frame">
+                        <img
+                            src="imgs/image.png"
+                            alt="صورة محمود زريق الشخصية"
+                            fetchpriority="high"
+                        />
+                    </div>
+                    <div class="floating-tag tag-top">
+                        <i class="fa-solid fa-code"></i> Clean Code
+                    </div>
+                    <div class="floating-tag tag-bottom">
+                        <i class="fa-solid fa-laptop-code"></i> Web Development
+                    </div>
+                </div>
+            </section>
 
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <span class="skill-icon"><i class="fa-brands fa-html5"></i></span>
-                    <h3>HTML</h3>
-                    <p>بناء هيكل صفحات الويب وتنظيم المحتوى.</p>
-                </article>
-                <article class="skill-card">
-                    <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i></span>
-                    <h3>CSS</h3>
-                    <p>تنسيق الواجهات وتصميم صفحات متجاوبة.</p>
-                </article>
-                <article class="skill-card">
-                    <span class="skill-icon"><i class="fa-brands fa-js"></i></span>
-                    <h3>JavaScript</h3>
-                    <p>إضافة التفاعل والوظائف إلى صفحات الويب.</p>
-                </article>
-                <article class="skill-card">
-                    <span class="skill-icon"><i class="fa-solid fa-cubes"></i></span>
-                    <h3>JS Libraries</h3>
-                    <p>استخدام مكتبات JavaScript عند الحاجة.</p>
-                </article>
-            </div>
-        </section>
+            <!-- About -->
+            <section id="about" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">01 / ABOUT ME</p>
+                    <h2>نبذة <span class="accent">عني</span></h2>
+                </div>
+                <div class="about-card">
+                    <div class="about-mark">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <div>
+                        <h3>مطور ويب شغوف بالتعلّم</h3>
+                        <p>
+                            أنا محمود زريق، مطور واجهات أمامية أعمل على بناء
+                            صفحات ويب باستخدام HTML وCSS وJavaScript. أهتم
+                            بتنسيق الواجهات، وتجربة المستخدم، وجعل المواقع
+                            مناسبة لمختلف أحجام الشاشات. أحرص على تطوير مهاراتي
+                            باستمرار، وتجربة الأدوات والمكتبات التي تساعدني على
+                            كتابة كود واضح ومنظم.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Contact -->
-        <section id="contact" class="section contact-section">
-            <div class="section-heading">
-                <p class="eyebrow">03 / CONTACT</p>
-                <h2>لنبقَ على <span class="accent">تواصل</span></h2>
-                <p class="section-description">يمكنك العثور عليّ عبر حساباتي التالية.</p>
-            </div>
+            <!-- Skills -->
+            <section id="skills" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / TECH STACK</p>
+                    <h2>مهاراتي <span class="accent">التقنية</span></h2>
+                    <p class="section-description">
+                        التقنيات التي أستخدمها في رحلتي لتطوير الويب.
+                    </p>
+                </div>
 
-            <div class="social-links">
-                <a href="https://wa.me/963962728182" aria-label="واتساب" title="واتساب"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://t.me/mahmoudzureik" aria-label="تيليجرام" title="تيليجرام"><i
-                        class="fa-brands fa-telegram"></i></a>
-                <a href="https://www.facebook.com/share/19TJYJ9wmG/" aria-label="فيسبوك" title="فيسبوك"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/md.codes?igsi=Mzg0emF4ZTNsYzAy" aria-label="إنستغرام"
-                    title="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/Mahmoud-Zureik" aria-label="GitHub" title="GitHub"><i
-                        class="fa-brands fa-github"></i></a>
-                <a href="mailto:mdcodes@gmail.com" aria-label="البريد الإلكتروني" title="البريد الإلكتروني"><i
-                        class="fa-solid fa-envelope"></i></a>
-            </div>
-        </section>
-    </main>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <span class="skill-icon"
+                            ><i class="fa-brands fa-html5"></i
+                        ></span>
+                        <h3>HTML</h3>
+                        <p>بناء هيكل صفحات الويب وتنظيم المحتوى.</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-icon"
+                            ><i class="fa-brands fa-css3-alt"></i
+                        ></span>
+                        <h3>CSS</h3>
+                        <p>تنسيق الواجهات وتصميم صفحات متجاوبة.</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-icon"
+                            ><i class="fa-brands fa-js"></i
+                        ></span>
+                        <h3>JavaScript</h3>
+                        <p>إضافة التفاعل والوظائف إلى صفحات الويب.</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-icon"
+                            ><i class="fa-solid fa-cubes"></i
+                        ></span>
+                        <h3>JS Libraries</h3>
+                        <p>استخدام مكتبات JavaScript عند الحاجة.</p>
+                    </article>
+                </div>
+            </section>
 
-    <!-- Footer -->
-    <footer>
-        <a class="footer-brand" href="#home">MDCODES</a>
-        <p>محمود زريق · جميع الحقوق محفوظة © <span id="year">2026</span></p>
-    </footer>
+            <!-- Contact -->
+            <section id="contact" class="section contact-section">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / CONTACT</p>
+                    <h2>لنبقَ على <span class="accent">تواصل</span></h2>
+                    <p class="section-description">
+                        يمكنك العثور عليّ عبر حساباتي التالية.
+                    </p>
+                </div>
 
-    <!-- JavaScript -->
-    <script src="index.js"></script>
-</body>
+                <div class="social-links">
+                    <a
+                        href="https://wa.me/963962728182"
+                        aria-label="واتساب"
+                        title="واتساب"
+                        ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                    <a
+                        href="https://t.me/mahmoudzureik"
+                        aria-label="تيليجرام"
+                        title="تيليجرام"
+                        ><i class="fa-brands fa-telegram"></i
+                    ></a>
+                    <a
+                        href="https://www.facebook.com/share/19TJYJ9wmG/"
+                        aria-label="فيسبوك"
+                        title="فيسبوك"
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                    <a
+                        href="https://www.instagram.com/md.codes?igsi=Mzg0emF4ZTNsYzAy"
+                        aria-label="إنستغرام"
+                        title="إنستغرام"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a
+                        href="mailto:mdcodes@gmail.com"
+                        aria-label="البريد الإلكتروني"
+                        title="البريد الإلكتروني"
+                        ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                </div>
+            </section>
+        </main>
 
+        <!-- Footer -->
+        <footer>
+            <a class="footer-brand" href="#home">MDCODES</a>
+            <p>محمود زريق · جميع الحقوق محفوظة © <span id="year">2026</span></p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="index.js"></script>
+    </body>
 </html>
