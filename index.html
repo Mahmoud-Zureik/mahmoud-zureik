@@ -7,15 +7,13 @@
         <meta name="color-scheme" content="dark" />
         <meta
             name="description"
-            content="الموقع الشخصي لمحمود زريق، طالب ومبرمج مهتم بمجال تقنية المعلومات وتطوير مهاراته في البرمجة."
+            content="الموقع الشخصي لمحمود زريق | MDCODES - طالب ومبرمج مهتم بتقنية المعلومات والأمن السيبراني."
         />
         <title>Mahmoud Zureik | MDCODES</title>
 
-        <!-- Icon -->
-        <link rel="icon" href="imgs/logo.svg" />
-
-        <!-- Fonts and Icons -->
+        <link rel="icon" href="imgs/logo.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
             rel="stylesheet"
@@ -24,15 +22,21 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         />
-
-        <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <!-- Header -->
+        <div class="cyber-background" aria-hidden="true">
+            <canvas id="cyber-canvas"></canvas>
+            <div class="cyber-grid"></div>
+            <div class="cyber-scanline"></div>
+            <div class="cyber-orb cyber-orb-one"></div>
+            <div class="cyber-orb cyber-orb-two"></div>
+        </div>
+
         <header>
-            <div id="scroll-progress"></div>
+            <div id="scroll-progress" aria-hidden="true"></div>
+
             <a
                 class="brand"
                 href="#home"
@@ -46,42 +50,50 @@
                 id="menu-toggle"
                 aria-label="فتح القائمة"
                 aria-expanded="false"
+                aria-controls="navbar"
             >
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
 
-            <nav class="navbar" id="navbar">
+            <nav class="navbar" id="navbar" aria-label="القائمة الرئيسية">
                 <a href="#home">الرئيسية</a>
                 <a href="#about">نبذة عني</a>
                 <a href="#skills">مهاراتي</a>
+                <a href="#interests">اهتماماتي</a>
                 <a href="#contact">التواصل</a>
             </nav>
         </header>
 
         <main>
-            <!-- Home -->
             <section id="home" class="hero section">
                 <div class="hero-content">
                     <p class="eyebrow">
-                        <span class="status-dot"></span> أهلاً بك في موقعي
-                        الشخصي
+                        <span class="status-dot"></span>
+                        أهلاً بك في موقعي الشخصي
                     </p>
+
                     <h1>أنا <span class="accent">محمود زريق</span></h1>
-                    <h2>IT & Programming</h2>
+                    <h2>IT Student &amp; Programmer</h2>
+
                     <p class="hero-description">
-                        أنا طالب ومبرمج مهتم بمجال تقنية المعلومات (IT)، أعمل
-                        على تطوير مهاراتي البرمجية وتوسيع معرفتي بالتقنيات
-                        المختلفة.
+                        طالب ومبرمج مهتم بتقنية المعلومات والبرمجة والأمن
+                        السيبراني.
                     </p>
+
                     <div class="hero-actions">
-                        <a class="button primary" href="#about"
-                            ><i class="fa-solid fa-user"></i> تعرّف عليّ</a
-                        >
-                        <a class="button secondary" href="#contact"
-                            ><i class="fa-regular fa-paper-plane"></i> تواصل
-                            معي</a
-                        >
+                        <a class="button primary" href="#about">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                            تعرّف عليّ
+                        </a>
+                        <a class="button secondary" href="#contact">
+                            <i
+                                class="fa-regular fa-paper-plane"
+                                aria-hidden="true"
+                            ></i>
+                            تواصل معي
+                        </a>
                     </div>
+
                     <p class="code-note">
                         <span>&lt;</span> Learning, building, improving
                         <span>/&gt;</span>
@@ -93,80 +105,92 @@
                     <div class="image-frame">
                         <img
                             src="imgs/image.png"
-                            alt="صورة محمود زريق الشخصية"
+                            alt="الصورة الشخصية لمحمود زريق"
                             fetchpriority="high"
                         />
                     </div>
                     <div class="floating-tag tag-top">
-                        <i class="fa-solid fa-code"></i> Programming
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        Programming
                     </div>
                     <div class="floating-tag tag-bottom">
-                        <i class="fa-solid fa-laptop-code"></i> Information
-                        Technology
+                        <i
+                            class="fa-solid fa-shield-halved"
+                            aria-hidden="true"
+                        ></i>
+                        Cybersecurity
                     </div>
                 </div>
             </section>
 
-            <!-- About -->
             <section id="about" class="section">
                 <div class="section-heading">
                     <p class="eyebrow">01 / ABOUT ME</p>
                     <h2>نبذة <span class="accent">عني</span></h2>
                 </div>
+
                 <div class="about-card">
                     <div class="about-mark">
-                        <i class="fa-solid fa-terminal"></i>
+                        <i class="fa-solid fa-terminal" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h3>نبذة عن محمود</h3>
+                        <h3>محمود زريق</h3>
                         <p>
                             أنا محمود زريق، طالب ومبرمج مهتم بمجال تقنية
-                            المعلومات (IT). لدي معرفة بـ HTML وCSS وJavaScript
-                            وPython، وأسعى إلى تطوير مهاراتي البرمجية وتوسيع
-                            معرفتي بالتقنيات المختلفة. أتعلم حاليًا التعامل مع
-                            واجهات برمجة التطبيقات (APIs)، وأخطط لتعلّم SQL
-                            وقواعد البيانات في المرحلة القادمة.
+                            المعلومات والأمن السيبراني. أتعلم البرمجة باستخدام
+                            HTML وCSS وJavaScript وPython، وأهتم أيضًا بنظام
+                            Linux والشبكات وأساسيات اختبار الاختراق.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <!-- Skills -->
             <section id="skills" class="section">
                 <div class="section-heading">
                     <p class="eyebrow">02 / TECH STACK</p>
                     <h2>مهاراتي <span class="accent">التقنية</span></h2>
                     <p class="section-description">
-                        اللغات والتقنيات التي تعلمتها، وما أعمل على تعلّمه
-                        حاليًا.
+                        اللغات والتقنيات التي أتعلمها وأستخدمها في مشاريعي.
                     </p>
                 </div>
 
                 <div class="skills-grid">
                     <article class="skill-card">
                         <span class="skill-icon"
-                            ><i class="fa-brands fa-html5"></i
+                            ><i
+                                class="fa-brands fa-html5"
+                                aria-hidden="true"
+                            ></i
                         ></span>
                         <h3>HTML</h3>
                         <p>إنشاء صفحات الويب وتنظيم محتواها.</p>
                     </article>
+
                     <article class="skill-card">
                         <span class="skill-icon"
-                            ><i class="fa-brands fa-css3-alt"></i
+                            ><i
+                                class="fa-brands fa-css3-alt"
+                                aria-hidden="true"
+                            ></i
                         ></span>
                         <h3>CSS</h3>
-                        <p>تنسيق صفحات الويب والتحكم في مظهرها.</p>
+                        <p>تنسيق صفحات الويب وتصميم واجهاتها.</p>
                     </article>
+
                     <article class="skill-card">
                         <span class="skill-icon"
-                            ><i class="fa-brands fa-js"></i
+                            ><i class="fa-brands fa-js" aria-hidden="true"></i
                         ></span>
                         <h3>JavaScript</h3>
                         <p>إضافة التفاعل والوظائف إلى صفحات الويب.</p>
                     </article>
+
                     <article class="skill-card">
                         <span class="skill-icon"
-                            ><i class="fa-brands fa-python"></i
+                            ><i
+                                class="fa-brands fa-python"
+                                aria-hidden="true"
+                            ></i
                         ></span>
                         <h3>Python</h3>
                         <p>لغة برمجة أتعلمها وأستخدمها في البرمجة.</p>
@@ -174,10 +198,44 @@
                 </div>
             </section>
 
-            <!-- Contact -->
+            <section id="interests" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / INTERESTS</p>
+                    <h2>مجالات <span class="accent">اهتمامي</span></h2>
+                    <p class="section-description">
+                        مجالات أتابعها وأطوّر معرفتي بها.
+                    </p>
+                </div>
+
+                <div class="interests-grid">
+                    <article class="interest-card">
+                        <i class="fa-brands fa-linux" aria-hidden="true"></i>
+                        <span>Linux</span>
+                    </article>
+                    <article class="interest-card">
+                        <i
+                            class="fa-solid fa-network-wired"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Networking</span>
+                    </article>
+                    <article class="interest-card">
+                        <i
+                            class="fa-solid fa-shield-halved"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Cybersecurity</span>
+                    </article>
+                    <article class="interest-card">
+                        <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                        <span>Penetration Testing</span>
+                    </article>
+                </div>
+            </section>
+
             <section id="contact" class="section contact-section">
                 <div class="section-heading">
-                    <p class="eyebrow">03 / CONTACT</p>
+                    <p class="eyebrow">04 / CONTACT</p>
                     <h2>لنبقَ على <span class="accent">تواصل</span></h2>
                     <p class="section-description">
                         يمكنك العثور عليّ عبر حساباتي التالية.
@@ -189,43 +247,57 @@
                         href="https://wa.me/963962728182"
                         aria-label="واتساب"
                         title="واتساب"
-                        ><i class="fa-brands fa-whatsapp"></i
-                    ></a>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </a>
                     <a
                         href="https://t.me/mahmoudzureik"
                         aria-label="تيليجرام"
                         title="تيليجرام"
-                        ><i class="fa-brands fa-telegram"></i
-                    ></a>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                    </a>
                     <a
                         href="https://www.facebook.com/share/19TJYJ9wmG/"
                         aria-label="فيسبوك"
                         title="فيسبوك"
-                        ><i class="fa-brands fa-facebook"></i
-                    ></a>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    </a>
                     <a
                         href="https://www.instagram.com/md.codes?igsi=Mzg0emF4ZTNsYzAy"
                         aria-label="إنستغرام"
                         title="إنستغرام"
-                        ><i class="fa-brands fa-instagram"></i
-                    ></a>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
                     <a
                         href="mailto:mdcodes@gmail.com"
                         aria-label="البريد الإلكتروني"
                         title="البريد الإلكتروني"
-                        ><i class="fa-solid fa-envelope"></i
-                    ></a>
+                    >
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </a>
                 </div>
             </section>
         </main>
 
-        <!-- Footer -->
         <footer>
             <a class="footer-brand" href="#home">MDCODES</a>
-            <p>محمود زريق · جميع الحقوق محفوظة © <span id="year">2026</span></p>
+            <p>محمود زريق · جميع الحقوق محفوظة © <span id="year"></span></p>
         </footer>
 
-        <!-- JavaScript -->
         <script src="index.js"></script>
     </body>
 </html>
